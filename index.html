@@ -12,7 +12,7 @@
           <li><a href="gallery.html">Фото и видео</a></li>
           <li>
             <a href="#">
-              <img src="img/logo.svg" width="140" height="72" alt="Логотип города Седона">
+              <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
             </a>
           </li>
           <li><a href="#">Карта штата</a></li> <!-- Исходил из того, данный пункт меню будет скроллить до блока с картой -->
@@ -24,6 +24,16 @@
 
       <h1>Добро пожаловать в Седону</h1>
 
+      <div> <!-- Контейнер для стилизации картинки фона, временно будет стоять картинка как заглушка, потом будет делать стилями -->
+        <img src="img/background-photo.jpg" width="1200" height="800" alt="Изображение с горами Седоны">
+      </div>
+      <div> <!-- Контейнер для стилизации картинки фона, временно будет стоять картинка как заглушка, потом будет делать стилями -->
+        <img src="img/intro-welcome.svg" width="459" height="353" alt="Приветственный заголовок">
+      </div>
+      <div>
+        <img src="img/intro-mask.svg" width="1203" height="59" alt="Декоративная плашка">
+      </div>
+
       <section>
         <h2>Преимущества Седоны</h2> <!-- Этот заголовок для робота и будет скрыт -->
         <p>
@@ -32,27 +42,94 @@
         <p>
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
-        <!--
-          Здесь будет список преимуществ
-        <ul> ...
-          <li>...
-        -->
+        <ul>
+          <li>
+            <div> <!-- Контейнер для расположения блока с текстом и фото -->
+              <p>
+                <span>Настоящий городок</span><br>
+                — №1 — <br>
+                Седона — не аттракцион для туристов, там течёт своя жизнь
+              </p>
+              <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото с атмосферным видом города">
+            </div>
+              <ul>
+                <li>
+                  <div>
+                    <p>
+                      <span>Жилье</span><br>
+                      Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                    <p>
+                    <img src="img/housing-icon.svg" width="75" height="72" alt="Иконка с домиком">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>
+                      <span>Еда</span>
+                      Всегда заказывайте фирменный бургер, вы не разочаруетесь!<br>
+                    </p>
+                    <img src="img/eat-icon.svg" width="74" height="70" alt="Иконка с бургером>">
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <p>
+                      <span>Сувениры</span><br>
+                      Не только китайского, но и местного производства!
+                    </p>
+                    <img src="img/souvenir-icon.svg" width="64" height="76" alt="Иконка с подарком">
+                  </div>
+                </li>
+              </ul>
+            </li>
+          <li>
+            <div>
+              <p>
+                <span>Там есть мост дьявола</span><br>
+                  — №2 — <br>
+                  Да, по нему можно пройти! Если конечно вы осмелитесь
+              </p>
+              <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Мост дьявола">
+            </div>
+          </li>
+          <li>
+            <p>
+              <span>Небольшая площадь</span><br>
+              — №3 — <br>
+              Все достопримечательности находятся очень близко
+            <p>
+          </li>
+          <li>
+            <p>
+              <span>Красивая дорога</span><br>
+              — №4 — <br>
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </li>
+          <li>
+            <p>
+              <span>Мало туристов</span><br>
+              — №5 — <br>
+              Большинство едет в Гранд Каньон и толпится там!
+            </p>
+          </li>
+        </ul>
       </section>
 
       <section>
         <h2>Поиск гостиниц в Седоне</h2> <!-- Этот заголовок для робота и будет скрыт -->
-        <p>
-          <span>Заинтересовались?</span>
-          <span>Укажите предполагаемые даты поездки,<br>
-                и мы покажем вам лучшие предложения гостиниц в Седоне
-          </span>
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <!-- Форма поиска гостиниц в седоне -->
       </section>
 
       <section>
         <h2>Карта штата</h2> <!-- Этот заголовок для робота и будет скрыт -->
-        <!-- Блок с картой -->
+        <div> <!-- Контейнер для встраивания карты JSом, на настоящий момент заглушка в виде картинки -->
+          <img src="img/map.png" width="1200" height="594" alt="Заглушка карты">
+        </div>
       </section>
     </main>
     <footer>
@@ -60,13 +137,25 @@
         #VISITSEDONA<br>
         ТЕЛ: +7(495)666-02-66
       <p>
+      <div> <!-- контейнер для квадратной подложки для икноки -->
+        <a href="https://twitter.com/">
+          <img src="img/tw-icon.svg" width="17" height="15" alt="Иконка твиттера">
+        </a>
+      </div>
       <div>
-          <a href="https://twitter.com/">Twitter</a>
-          <a href="https://www.facebook.com/">Facebook</a>
-          <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.facebook.com/">
+          <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка фейсбука">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/">
+          <img src="img/youtube-icon.svg" width="20" height="16" alt="Иконка инстаграмма">
+        </a>
       </div>
       <span>Website By</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+      </a>
     </footer>
   </body>
 </html>
