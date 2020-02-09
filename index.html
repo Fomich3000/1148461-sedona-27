@@ -20,7 +20,7 @@
     </header>
     <main>
 
-      <h1>Добро пожаловать в Седону</h1>
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
 
       <div> <!-- Контейнер для стилизации картинки фона, временно будет стоять картинка как заглушка, потом будет делать стилями -->
         <img src="img/background-photo.jpg" width="1200" height="800" alt="Изображение с горами Седоны">
@@ -33,7 +33,7 @@
       </div>
 
       <section>
-        <h2>Преимущества Седоны</h2> <!-- Этот заголовок для робота и будет скрыт -->
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <p>
           <strong>Седона — небольшой городок в Аризоне, заслуживающий большего!</strong>
         </p>
@@ -57,7 +57,7 @@
                       <span>Жилье</span><br>
                       Рекомендуем пожить в настоящем мотеле, всё как в кино!
                     <p>
-                    <img src="img/icon-housing.svg" width="75" height="72" alt="Иконка с домиком">
+                    <img src="img/housing-icon.svg" width="75" height="72" alt="Иконка с домиком">
                   </div>
                 </li>
                 <li>
@@ -115,16 +115,35 @@
       </section>
 
       <section>
-        <h2>Поиск гостиниц в Седоне</h2> <!-- Этот заголовок для робота и будет скрыт -->
+        <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <!-- Форма поиска гостиниц в седоне -->
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form action="" method="get">
+          <p>
+            <label for="checkin-date">Дата заезда:</label>
+            <input type="date" id="checkin-date" name="check-in" value="2017-04-24">
+          </p>
+          <p>
+            <label for="checkout-date">Дата выезда:</label>
+            <input type="date" id="checkout-date" name="check-out" value="2017-07-04">
+          </p>
+          <p>
+            <label for="grownups">Взрослые:</label>
+            <input type="text" id="grownups" name="grownups-number" value="2">
+          </p>
+          <p>
+            <label for="kids">Дети:</label>
+            <input type="text" id="kids" name="kids-number" value="0">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
 
       <section>
-        <h2>Карта штата</h2> <!-- Этот заголовок для робота и будет скрыт -->
+        <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.png" width="1200" height="594" alt="Карта">
       </section>
     </main>
