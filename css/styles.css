@@ -1,0 +1,145 @@
+body {
+  font-size: 14px;
+  font-family: 'PT Sans', Arial, sans-serif;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+  font-weight: 700;
+  color: #333333;
+  line-height: 26px;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #333333;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.background-photo {
+  width: 1203px;
+  background-color: #81b3d2;
+    background:
+    url("../img/background-photo.jpg")
+    no-repeat;
+}
+
+
+.welcome-to-sedona {
+  width: 459px;
+  height: 353px;
+  background:
+    url("../img/intro-welcome.svg")
+    no-repeat;
+
+}
+
+.decorative-mask {
+  height: 800px;
+  background:
+    url("../img/intro-mask.svg")
+    no-repeat,
+    0px 741px;
+  }
+
+  .heading-regular {
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  .slogan {
+    line-height: 26px;
+  }
+
+  .heading-huge {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+.blue-back {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.grey-back {
+  background-color: #eeeeee;
+}
+
+.reasons-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.city-benefits-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.button {
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #766357;
+  border: none;
+}
+
+.button-blue {
+  background-color: #81b3d2;
+}
+
+.form-roll-button {
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hotel-search-form {
+  width: 568px;
+  height: 395px;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  border: 1px;
+}
+
+.hotel-search-button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  width: 458px;
+  height: 58px;
+}
+
+.input {
+  background-color: #f2f2f2;
+}
