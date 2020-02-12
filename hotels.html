@@ -25,13 +25,13 @@
 
       <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
 
-      <section>
+      <section class="filter-section">
         <h2 class="visually-hidden">Фильтры</h2>
         <div class="background-blurred">
         </div>
         <form class="filter" method="get" action="#">
           <fieldset>
-            <legend>Инфраструктура</legend>
+            <legend class="white-heading">Инфраструктура</legend>
             <ul class="filter-list">
               <li>
                 <input type="checkbox" id="filter-pool" name="pool">
@@ -48,7 +48,7 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Тип жилья</legend>
+            <legend class="white-heading">Тип жилья</legend>
             <ul class="filter-list">
               <li>
                 <input type="checkbox" id="filter-hotel" name="hotel">
@@ -64,8 +64,8 @@
               </li>
             </ul>
           </fieldset>
-          <p>Стоимость в сутки (р):</p>
-          <div class="white-border-element">
+          <p class="white-heading">Стоимость в сутки (р):</p>
+          <div class="white-border">
             <div class="price-from-block">
               <label for="price-from">От</label>
               <input type="number" name="from" id="price-from" value="0">
@@ -83,7 +83,7 @@
               </div>
             </div>
           </div>
-          <button class="white-border-element filter-show-button" type="submit">Показать</button>
+          <button class="white-border filter-show-button" type="submit">Показать</button>
         </form>
       </section>
 
@@ -114,50 +114,50 @@
         <ul class="hotels-list">
           <li>
             <img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & SPA">
-            <div>
-              <h3>Amara Resort & SPA</h3>
+            <div class="result-item">
+              <h3 class="heading-regular hotel-name">Amara Resort & SPA</h3>
               <p>Гостиница</p>
               <p>от 4000 Р.</p>
               <a href=" ">Подробнее</a>
               <a href=" ">Забронировать</a>
             </div>
-            <div>
+            <div class="rating-block">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
-              <p>Рейтинг: 8,5</p>
+              <p class="rating-value">Рейтинг: 8,5</p>
             </div>
           </li>
           <li>
             <img src="img/motel-desert-quail.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
-            <div>
-              <h3>Desert Quail Inn</h3>
+            <div class="result-item">
+              <h3 class="heading-regular hotel-name">Desert Quail Inn</h3>
               <p>Мотель</p>
               <p>от 3000 Р.</p>
               <a href=" ">Подробнее</a>
               <a href=" ">Забронировать</a>
             </div>
-            <div>
+            <div class="rating-block">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
-              <p>Рейтинг: 8,9</p>
+              <p class="rating-value">Рейтинг: 8,9</p>
             </div>
           </li>
           <li>
             <img src="img/villas-poco-diablo.jpg" width="135" height="90" alt="Фото апартаментов Poco Diablo">
-            <div>
-              <h3>Villas at Poco Diablo</h3>
+            <div class="result-item">
+              <h3 class="heading-regular hotel-name">Villas at Poco Diablo</h3>
               <p>Апартаменты</p>
               <p>от 2000 Р.</p>
               <a href=" ">Подробнее</a>
               <a href=" ">Забронировать</a>
             </div>
-            <div>
+            <div class="rating-block">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
               <img src="img/star.svg" width="18" height="17" alt="Звезда рейтинга">
-              <p>Рейтинг: 9,2</p>
+              <p class="rating-value">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>

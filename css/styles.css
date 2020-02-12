@@ -56,24 +56,26 @@ a {
   url("../img/background-photo.jpg") no-repeat 0px -85px
 }
 
-  .heading-regular {
-    font-size: 21px;
-    font-weight: 700;
-    text-align: center;
-}
 
-  .slogan {
-    line-height: 26px;
-}
-.benefits-description {
+.heading-regular {
+  font-size: 21px;
+  font-weight: 700;
   text-align: center;
 }
 
-  .heading-huge {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 700;
-    text-align: center;
+.slogan {
+  line-height: 26px;
+}
+
+.benefits-item {
+  text-align: center;
+}
+
+.heading-huge {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .search-section {
@@ -120,8 +122,25 @@ a {
   border: none;
 }
 
+.button:hover {
+  background-color: #604e43;
+}
+
+.button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-blue {
   background-color: #81b3d2;
+}
+
+.button-blue:hover {
+   background-color: #669ec0;
+}
+
+.button-blue:active {
+  background-color: #5496bd;
 }
 
 .form-roll-button {
@@ -157,12 +176,47 @@ a {
     center;
 }
 
+fieldset {
+  background-color: black;
+}
+.filter-section {
+  color: #ffffff;
+}
+
+.white-heading {
+  font-weight: 700;
+}
+
 .sorting-options {
   list-style: none;
 }
 
 .hotels-list {
   list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.hotel-name {
+  text-align: left;
+}
+
+.result-item {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.rating-block {
+
+}
+
+.rating-value {
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  color: #666666;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .filter-list {
@@ -224,4 +278,31 @@ a {
 
 .social-icon-youtube:active {
   opacity: 0.3;
+}
+
+.copyright-block {
+  font-size: 14px;
+  line-height: 26px;
+  width: 115px;
+}
+
+.copyright-block a {
+  color: black;
+}
+
+.htmlacademy-logo {
+  width: 115px;
+  height: 41px;
+  background:
+    url("../img/logo-htmlacademy.svg")
+    no-repeat;
+}
+
+.htmlacademy-logo:hover {
+  background-image:
+    url("../img/logo-htmlacademy-hover.svg");
+}
+
+.htmlacademy-logo:active {
+  background-image: url("../img/logo-htmlacademy-active.svg");
 }
