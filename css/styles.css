@@ -5,7 +5,6 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-
 }
 
 .visually-hidden {
@@ -43,46 +42,54 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.background-photo {
-  width: 1203px;
+.intro-block {
+  width: 1200px;
+  height: 508px;
   background-color: #81b3d2;
-    background:
-    url("../img/background-photo.jpg")
-    no-repeat;
 }
 
-
-.welcome-to-sedona {
-  width: 459px;
-  height: 353px;
+.intro-picture {
+  height: 508px;
   background:
-    url("../img/intro-welcome.svg")
-    no-repeat;
-
+  url("../img/intro-mask.svg") no-repeat 0px 452px,
+  url("../img/intro-welcome.svg") no-repeat 375px 76px / 459px 353px,
+  url("../img/background-photo.jpg") no-repeat 0px -85px
 }
-
-.decorative-mask {
-  height: 800px;
-  background:
-    url("../img/intro-mask.svg")
-    no-repeat,
-    0px 741px;
-  }
 
   .heading-regular {
     font-size: 21px;
     font-weight: 700;
-  }
+    text-align: center;
+}
 
   .slogan {
     line-height: 26px;
-  }
+}
+.benefits-description {
+  text-align: center;
+}
 
   .heading-huge {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-  }
+    text-align: center;
+}
+
+.search-section {
+  text-align: center;
+}
+
+.hotel-search-form,
+.hotel-search-input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.hotel-search-input {
+  background-color: #f2f2f2;
+}
 
 .blue-back {
   color: #ffffff;
@@ -140,6 +147,81 @@ a {
   height: 58px;
 }
 
-.input {
-  background-color: #f2f2f2;
+
+.background-blurred {
+  width: 1200px;
+  height: 217px;
+  background:
+    url("../img/filter-background.jpg")
+    no-repeat
+    center;
+}
+
+.sorting-options {
+  list-style: none;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+
+.contacts {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.social-back {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-back:hover {
+  background-color: #669ec0;
+}
+
+.social-back:active {
+    background-color: #5496bd;
+  }
+
+.social-icon-twitter {
+  height: 48px;
+  background:
+      url("../img/tw-icon.svg")
+      no-repeat
+      center center / 17px 15px;
+}
+
+.social-icon-twitter:active {
+  opacity: 0.3;
+}
+
+.social-icon-facebook {
+  height: 48px;
+  background:
+      url("../img/fb-icon.svg")
+      no-repeat
+      center center / 12px 22px;
+}
+
+.social-icon-facebook:active {
+  opacity: 0.3;
+}
+
+.social-icon-youtube {
+  height: 48px;
+  background:
+      url("../img/youtube-icon.svg")
+      no-repeat
+      center center / 20px 16px;
+}
+
+.social-icon-youtube:active {
+  opacity: 0.3;
 }

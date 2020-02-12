@@ -23,19 +23,95 @@
     </header>
     <main>
 
-      <h1>Поиск гостиниц в Седоне</h1>
+      <h1 class="visually-hidden">Поиск гостиниц в Седоне</h1>
 
       <section>
-        <h2>Фильтры</h2>
-        <div>
-          <img src="img/filter-background.jpg" width="1200" height="800" alt="Заблюренное фото гор Седоны">
+        <h2 class="visually-hidden">Фильтры</h2>
+        <div class="background-blurred">
         </div>
-
+        <form class="filter" method="get" action="#">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <ul class="filter-list">
+              <li>
+                <input type="checkbox" id="filter-pool" name="pool">
+                <label for="filter-pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-parking" name="parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-wifi" name="wi-fi">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <ul class="filter-list">
+              <li>
+                <input type="checkbox" id="filter-hotel" name="hotel">
+                <label for="filter-hotel">Отель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-motel" name="motel">
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-apartments" name="apartments">
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p>Стоимость в сутки (р):</p>
+          <div class="white-border-element">
+            <div class="price-from-block">
+              <label for="price-from">От</label>
+              <input type="number" name="from" id="price-from" value="0">
+            </div>
+            <div class="price-to-block">
+              <label for="price-to">До</label>
+              <input type="number" name="to" id="price-to" value="3000">
+            </div>
+            <div class=price-slider>
+              <div class="price-slider-button">
+              </div>
+              <div class="price-slider-range">
+              </div>
+              <div class="price-slier-button">
+              </div>
+            </div>
+          </div>
+          <button class="white-border-element filter-show-button" type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
-        <h2>Список гостиниц</h2>
-        <ul>
+        <p class="heading-regular">Найдено: 3</p>
+        <div class="sorting-block">
+          <p>Сортировка:</p>
+          <ul class="sorting-options">
+            <li>
+              <button class="sort-button" type="button">По цене</button>
+            </li>
+            <li>
+              <button class="sort-button" type="button">По типу</button>
+            </li>
+            <li>
+              <button class="sort-button" type="button">По рейтингу</button>
+            </li>
+          </ul>
+          <div class="asc-desc-buttons">
+            <button class="desc-button" type="button"></button>
+            <button class="asc-button" type="button"></button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="visually-hidden">Список гостиниц</h2>
+        <ul class="hotels-list">
           <li>
             <img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото гостиницы Amara Resort & SPA">
             <div>
@@ -87,28 +163,36 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <p>
-        #VISITSEDONA<br>
+    <footer class="main-footer">
+      <p class="contacts">
+        #VISITSEDONA
+      </p>
+      <p class="contacts">
         ТЕЛ: +7(495)666-02-66
-      <p>
-      <div>
+      </p>
+      <div class="social-back">
         <a href="https://twitter.com/">
-          <img src="img/tw-icon.svg" width="17" height="15" alt="Иконка твиттера">
+          <div class="social-icon-twitter">
+            <p class="visually-hidden">Twitter</p>
+          </div>
         </a>
       </div>
-      <div>
+      <div class="social-back">
         <a href="https://www.facebook.com/">
-          <img src="img/fb-icon.svg" width="12" height="22" alt="Иконка фейсбука">
+          <div class="social-icon-facebook">
+            <p class="visually-hidden">Facebook</p>
+          </div>
         </a>
       </div>
-      <div>
-        <a href="https://www.instagram.com/">
-          <img src="img/youtube-icon.svg" width="20" height="16" alt="Иконка инстаграмма">
+      <div class="social-back">
+        <a href="https://www.youtube.com">
+          <div class="social-icon-youtube">
+            <p class="visually-hidden">Youtube</p>
+          </div>
         </a>
       </div>
-      <span>Website By</span>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <span>Website By</span>
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
       </a>
     </footer>
