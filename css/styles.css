@@ -39,7 +39,8 @@ a {
 }
 
 .site-navigation a:active {
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+  opacity: 0.3;
 }
 
 .intro-block {
@@ -91,6 +92,14 @@ a {
 
 .hotel-search-input {
   background-color: #f2f2f2;
+}
+
+.hotel-search-input:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-search-input:active {
+  background-color: #ffffff;
 }
 
 .blue-back {
@@ -203,7 +212,6 @@ fieldset {
 }
 .sorting-block {
   font-size: 12px;
-  color: inherit;;
 }
 
 .filter-show-button {
@@ -215,6 +223,11 @@ fieldset {
   color: inherit;
 }
 
+.filter-show-button:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .sort-button {
   background: none;
   opacity: 0.3;
@@ -222,6 +235,16 @@ fieldset {
 	padding: 0;
 	cursor: pointer;
   text-transform: uppercase;
+}
+
+.sort-button:hover {
+  color: #81b3d2;
+  opacity: 1;
+}
+
+.sort-button:active {
+  color: #000000;
+  opacity: 1;
 }
 
 .desc-button, .asc-button{
@@ -261,9 +284,6 @@ fieldset {
 .desc-button:active {
   background: url(".../img/icon-down-dir-active.svg")
 }
-
-
-
 
 .sorting-options {
   list-style: none;
