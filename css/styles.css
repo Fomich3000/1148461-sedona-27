@@ -177,7 +177,7 @@ a {
 }
 
 fieldset {
-  background-color: black;
+  background-color: #81b3d2;
 }
 .filter-section {
   color: #ffffff;
@@ -185,7 +185,85 @@ fieldset {
 
 .white-heading {
   font-weight: 700;
+  background-color: #81b3d2;
 }
+
+#price-from, #price-to {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+}
+
+.white-border {
+  background-color: #81b3d2;
+  border-color: white;
+  border: 1px;
+}
+.sorting-block {
+  font-size: 12px;
+  color: inherit;;
+}
+
+.filter-show-button {
+  background-color:  #81b3d2;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.sort-button {
+  background: none;
+  opacity: 0.3;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+  text-transform: uppercase;
+}
+
+.desc-button, .asc-button{
+  width: 11px;
+  height: 10px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.asc-button {
+  background: url("../img/icon-up-dir.svg")
+  no-repeat;
+}
+
+.desc-button {
+  background: url("../img/icon-down-dir.svg")
+  no-repeat;
+}
+
+.asc-button:hover {
+    background: url("../img/icon-up-dir-hover.svg")
+    no-repeat;
+}
+
+.asc-button:active {
+  background: url("../img/icon-up-dir-active.svg")
+  no-repeat;
+}
+
+.desc-button:hover {
+  background: url("../img/icon-down-dir.svg")
+  no-repeat;
+}
+
+.desc-button:active {
+  background: url(".../img/icon-down-dir-active.svg")
+}
+
+
+
 
 .sorting-options {
   list-style: none;
@@ -197,7 +275,7 @@ fieldset {
   line-height: 21px;
 }
 
-.hotel-name {
+.result-heading, .hotel-name {
   text-align: left;
 }
 
