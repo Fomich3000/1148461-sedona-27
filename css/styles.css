@@ -293,10 +293,6 @@ fieldset {
   line-height: 21px;
 }
 
-.result-heading, .hotel-name {
-  text-align: left;
-}
-
 .result-item {
   font-size: 14px;
   line-height: 21px;
@@ -323,6 +319,7 @@ fieldset {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    color: #000000;
 }
 
 .social-icon-background {
