@@ -7,16 +7,28 @@ body {
   text-transform: uppercase;
 }
 
+a {
+    text-decoration: none;
+}
+
+fieldset {
+  background-color: #81b3d2;
+} /* Temporary, only to see text */
+
+.index-page {
+  text-align: center;
+}
+
+.hotel-page {
+  text-align: justify;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-}
-
-a {
-    text-decoration: none;
 }
 
 .main-navigation {
@@ -57,19 +69,24 @@ a {
   url("../img/background-photo.jpg") no-repeat 0px -85px
 }
 
-
 .heading-regular {
   font-size: 21px;
   font-weight: 700;
-  text-align: center;
+  color: #000000;
 }
 
 .slogan {
   line-height: 26px;
 }
 
-.benefits-item {
-  text-align: center;
+.city-benefits-list {
+  list-style: none;
+  padding: 0px;
+}
+
+.heading-white {
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .heading-huge {
@@ -77,29 +94,7 @@ a {
   line-height: 36px;
   font-weight: 700;
   text-align: center;
-}
-
-.search-section {
-  text-align: center;
-}
-
-.hotel-search-form,
-.hotel-search-input {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-}
-
-.hotel-search-input {
-  background-color: #f2f2f2;
-}
-
-.hotel-search-input:hover {
-  background-color: #ebebeb;
-}
-
-.hotel-search-input:active {
-  background-color: #ffffff;
+  color: #000000;
 }
 
 .blue-back {
@@ -109,16 +104,6 @@ a {
 
 .grey-back {
   background-color: #eeeeee;
-}
-
-.reasons-list {
-  list-style: none;
-  padding: 0px;
-}
-
-.city-benefits-list {
-  list-style: none;
-  padding: 0px;
 }
 
 .button {
@@ -160,11 +145,31 @@ a {
   line-height: 26px;
 }
 
+.hotel-search-form,
+.hotel-search-input {
+  margin: auto;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
 .hotel-search-form {
   width: 568px;
   height: 395px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   border: 1px;
+}
+
+.hotel-search-input {
+  background-color: #f2f2f2;
+}
+
+.hotel-search-input:hover {
+  background-color: #ebebeb;
+}
+
+.hotel-search-input:active {
+  background-color: #ffffff;
 }
 
 .hotel-search-button {
@@ -175,7 +180,6 @@ a {
   height: 58px;
 }
 
-
 .background-blurred {
   width: 1200px;
   height: 217px;
@@ -185,16 +189,8 @@ a {
     center;
 }
 
-fieldset {
-  background-color: #81b3d2;
-}
 .filter-section {
   color: #ffffff;
-}
-
-.white-heading {
-  font-weight: 700;
-  background-color: #81b3d2;
 }
 
 #price-from, #price-to {
@@ -210,6 +206,7 @@ fieldset {
   border-color: white;
   border: 1px;
 }
+
 .sorting-block {
   font-size: 12px;
 }
@@ -290,6 +287,7 @@ fieldset {
 }
 
 .hotels-list {
+  padding: 0;
   list-style: none;
   font-size: 14px;
   line-height: 21px;
@@ -302,10 +300,6 @@ fieldset {
 .result-item {
   font-size: 14px;
   line-height: 21px;
-}
-
-.rating-block {
-
 }
 
 .rating-value {
@@ -321,6 +315,9 @@ fieldset {
   list-style: none;
 }
 
+.main-footer {
+  text-align: justify;
+}
 
 .contacts {
     font-size: 21px;
@@ -328,26 +325,26 @@ fieldset {
     font-weight: 700;
 }
 
-.social-back {
+.social-icon-background {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
 }
 
-.social-back:hover {
+.social-icon-background:hover {
   background-color: #669ec0;
 }
 
-.social-back:active {
+.social-icon-background:active {
     background-color: #5496bd;
-  }
+}
 
 .social-icon-twitter {
   height: 48px;
   background:
-      url("../img/tw-icon.svg")
-      no-repeat
-      center center / 17px 15px;
+    url("../img/tw-icon.svg")
+    no-repeat
+    center center / 17px 15px;
 }
 
 .social-icon-twitter:active {
@@ -357,9 +354,9 @@ fieldset {
 .social-icon-facebook {
   height: 48px;
   background:
-      url("../img/fb-icon.svg")
-      no-repeat
-      center center / 12px 22px;
+    url("../img/fb-icon.svg")
+    no-repeat
+    center center / 12px 22px;
 }
 
 .social-icon-facebook:active {
@@ -369,9 +366,9 @@ fieldset {
 .social-icon-youtube {
   height: 48px;
   background:
-      url("../img/youtube-icon.svg")
-      no-repeat
-      center center / 20px 16px;
+    url("../img/youtube-icon.svg")
+    no-repeat
+    center center / 20px 16px;
 }
 
 .social-icon-youtube:active {
