@@ -5,6 +5,7 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  margin: 100px;
 }
 
 a {
@@ -12,8 +13,22 @@ a {
 }
 
 fieldset {
-  background-color: #81b3d2;
-} /* Temporary, only to see text */
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+    min-inline-size: 0;
+}
+
+legend {
+    padding-inline-start: 2px; padding-inline-end: 2px;
+}
 
 .index-page {
   text-align: center;
@@ -32,13 +47,35 @@ fieldset {
 }
 
 .main-navigation {
+  width: 1200px;
+  margin: auto;
+  padding: 0;
   font-weight: 700;
   color: #333333;
   line-height: 26px;
+  min-height: 56px;
+}
+
+.main-header-logo {
+  background:
+    url("../img/logo-sedona.svg")
+    no-repeat;
+  width: 140px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .site-navigation {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  min-height: 56px;
 }
 
 .site-navigation a {
@@ -58,6 +95,8 @@ fieldset {
 .intro-block {
   width: 1200px;
   height: 508px;
+  margin: auto;
+  margin-bottom: 59px;
   background-color: #81b3d2;
 }
 
@@ -77,11 +116,73 @@ fieldset {
 
 .slogan {
   line-height: 26px;
+  margin-bottom: 38px;
 }
 
-.city-benefits-list {
+.benefits-intro-text {
+  margin-bottom: 56px;
+}
+
+.benefits-item-wrapper {
+  min-height: 256px;
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-list {
+  width: 1200px;
   list-style: none;
   padding: 0px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.benefits-item {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefit-description {
+  max-width: 303px;
+}
+
+.benefit-picture {
+  min-height: 256px;
+  margin: 0;
+  padding: 0;
+}
+
+.benefit-backward {
+  order: 2;
+}
+
+.features-list {
+  width: 1200px;
+  padding: 0;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 85px;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.features-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-description {
+  width: 290px;
+  order: 2
+}
+
+.feature-icon {
+  align-self: center;
 }
 
 .heading-white {
@@ -90,6 +191,7 @@ fieldset {
 }
 
 .heading-huge {
+  margin-top: 57px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -104,6 +206,8 @@ fieldset {
 
 .grey-back {
   background-color: #eeeeee;
+  width: 400px;
+  height: 256px;
 }
 
 .button {
@@ -137,7 +241,18 @@ fieldset {
   background-color: #5496bd;
 }
 
+.map-background {
+  width: 1200px;
+  height: 593px;
+  margin: auto;
+  background-image: url('../img/map.png')
+}
+.search-intro-text {
+  margin: 0;
+}
+
 .form-roll-button {
+  margin-top: 52px;
   width: 568px;
   height: 86px;
   font-size: 21px;
@@ -147,21 +262,39 @@ fieldset {
 
 .hotel-search-form,
 .hotel-search-input {
-  margin: auto;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
+.hotel-search-input {
+  border: 0;
+  padding: 0;
+}
+
 .hotel-search-form {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 55px;
+  border: 1px;
   width: 568px;
   height: 395px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  border: 1px;
+  background-color: #ffffff;
+}
+
+.form-items-wrapper {
+  width: 458px;
+  height: 228px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .hotel-search-input {
   background-color: #f2f2f2;
+  width: 346px;
+  height: 38px;
 }
 
 .hotel-search-input:hover {
@@ -170,6 +303,10 @@ fieldset {
 
 .hotel-search-input:active {
   background-color: #ffffff;
+}
+
+.number-input {
+  width: 114px;
 }
 
 .hotel-search-button {
@@ -181,12 +318,45 @@ fieldset {
 }
 
 .background-blurred {
+  box-sizing: border-box;
+  padding: 35px 74px 35px 74px;
   width: 1200px;
   height: 217px;
+  margin: auto;
   background:
     url("../img/filter-background.jpg")
     no-repeat
     center;
+}
+
+.filter-form {
+  width: 1056px;
+  min-height: 153px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.infrastructure {
+  width: 139px;
+  margin-right: 115px;
+}
+
+.housing-type {
+  width: 137px;
+}
+
+.price-filter {
+  width: 318px;
+  margin-left: auto;
+}
+
+.price-from-block {
+  width: 157px;
+}
+
+.price-to-block {
+  width: 155px;
 }
 
 .filter-section {
@@ -202,22 +372,39 @@ fieldset {
 }
 
 .white-border {
-  background-color: #81b3d2;
   border-color: white;
   border: 1px;
 }
 
-.sorting-block {
+.sorting-section {
+  width: 1200px;
+  min-height: 86px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.sorting-section {
   font-size: 12px;
 }
 
+.result-heading {
+  margin-right: 49px;
+  margin-left: 72px;
+}
+
 .filter-show-button {
-  background-color:  #81b3d2;
-	border: none;
+	border: 1px;
+  border-color: white;
 	padding: 0;
 	cursor: pointer;
   text-transform: uppercase;
   color: inherit;
+  background-color: transparent;
+}
+
+.asc-desc-buttons {
+  margin-left: auto;
 }
 
 .filter-show-button:active {
@@ -293,6 +480,25 @@ fieldset {
   line-height: 21px;
 }
 
+.hotels-list {
+  width: 1200px;
+  margin: auto;
+}
+
+.hotels-list>li {
+  display:flex;
+  align-items: center;
+}
+
+.housing-image {
+  margin-right: 30px;
+  margin-left: 72px;
+}
+
+.rating-block {
+  margin-left: auto;
+}
+
 .result-item {
   font-size: 14px;
   line-height: 21px;
@@ -309,17 +515,32 @@ fieldset {
 
 .filter-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .main-footer {
-  text-align: justify;
+  width: 1200px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
 }
 
 .contacts {
+  margin-left: 132px;
     font-size: 21px;
-    line-height: 26px;
+    line-height: 30px;
     font-weight: 700;
     color: #000000;
+}
+
+.social-icons-wrapper {
+  width: 150px;
+  margin-left: 169px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .social-icon-background {
@@ -373,9 +594,13 @@ fieldset {
 }
 
 .copyright-block {
+  width: 197px;
+  margin-left: 228px;
+  display: flex;
   font-size: 14px;
   line-height: 26px;
-  width: 115px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .copyright-block a {

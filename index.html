@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -7,12 +8,15 @@
     <link href="css/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <header class="main-header">
-      <a class="main-header-logo" href="#">
-        <img src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
-      </a>
       <nav class="main-navigation">
+        <a href="#">
+          <div class="main-header-logo">
+            <p class="visually-hidden">Логотип города Седона</p>
+          </div>
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="gallery.html">Фото и видео</a></li>
@@ -21,6 +25,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="index-page">
 
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -37,82 +42,91 @@
                   заслуживающий большего!
           </strong>
         </p>
-        <p>
+        <p class="benefits-intro-text">
           Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
         </p>
-        <ul class="city-benefits-list">
+        <ul class="benefits-list">
           <li>
-            <div class="blue-back">
-              <p>
-                <span class="heading-regular heading-white">Настоящий городок</span><br>
-                — №1 — <br>
-                Седона — не аттракцион для туристов, там течёт своя жизнь
-              </p>
+            <div class="benefits-item-wrapper">
+              <div class="benefits-item blue-back">
+                <p class="benefit-description">
+                  <span class="heading-regular heading-white">
+                    Настоящий<br>городок</span>
+                    <br><br> — №1 — <br><br>
+                    Седона — не аттракцион для туристов,<br>
+                    там течёт своя жизнь
+                  </p>
+                </div>
+                <img class="benefit-picture" src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото с атмосферным видом города">
             </div>
-            <img src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото с атмосферным видом города">
-              <ul class="city-benefits-list">
-                <li>
-                  <div class="benefits-item">
-                    <p>
-                      <span class=heading-regular>Жилье</span><br>
-                      Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                    </p>
-                    <img src="img/housing-icon.svg" width="75" height="72" alt="Иконка с домиком">
-                  </div>
-                </li>
-                <li>
-                  <div class="benefits-item">
-                    <p>
-                      <span class=heading-regular>Еда</span><br>
-                      Всегда заказывайте фирменный бургер, вы не разочаруетесь!<br>
-                    </p>
-                    <img src="img/eat-icon.svg" width="74" height="70" alt="Иконка с бургером>">
-                  </div>
-                </li>
-                <li>
-                  <div class="benefits-item">
-                    <p>
-                      <span class=heading-regular>Сувениры</span><br>
-                      Не только китайского, но и местного производства!
-                    </p>
-                    <img src="img/souvenir-icon.svg" width="64" height="76" alt="Иконка с подарком">
-                  </div>
-                </li>
-              </ul>
-            </li>
+            <ul class="features-list">
+              <li>
+                <div class="features-item">
+                  <p class="feature-description">
+                    <span class=heading-regular>Жилье</span><br><br>
+                    Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  </p>
+                  <img class="feature-icon" src="img/housing-icon.svg" width="75" height="72" alt="Иконка с домиком">
+                  <br>
+                </div>
+              </li>
+              <li>
+                <div class="features-item">
+                  <p class="feature-description">
+                    <span class="heading-regular">Еда</span><br><br>
+                    Всегда заказывайте фирменный бургер, вы не разочаруетесь!<br>
+                  </p>
+                  <img class="feature-icon" src="img/eat-icon.svg" width="74" height="70" alt="Иконка с бургером>">
+                  <br>
+                </div>
+              </li>
+              <li>
+                <div class="features-item">
+                  <p class="feature-description">
+                    <span class="heading-regular">Сувениры</span><br><br>
+                    Не только китайского, но и местного производства!
+                  </p>
+                  <img class="feature-icon" src="img/souvenir-icon.svg" width="64" height="76" alt="Иконка с подарком">
+                  <br>
+                </div>
+              </li>
+            </ul>
+          </li>
           <li>
-            <div class="benefits-item blue-back">
-              <p>
-                <span class="heading-regular heading-white">Там есть мост дьявола</span><br>
-                  — №2 — <br>
-                  Да, по нему можно пройти! Если конечно вы осмелитесь
-              </p>
+            <div class="benefits-item-wrapper">
+              <div class="benefits-item blue-back benefit-backward">
+                <p class="benefit-description">
+                  <span class="heading-regular heading-white">Там есть<br> мост дьявола</span><br><br>
+                    — №2 — <br><br>
+                    Да, по нему можно пройти! Если конечно вы осмелитесь
+                </p>
+              </div>
+              <img class="benefit-picture" src="img/feature-picture-2.jpg" width="800" height="256" alt="Мост дьявола">
             </div>
-            <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Мост дьявола">
           </li>
           <li>
             <div class="benefits-item grey-back">
-              <p>
-                <span class=heading-regular>Небольшая площадь</span><br>
-                — №3 — <br>
+              <p class="benefit-description">
+                <span class=heading-regular>Небольшая<br> площадь</span><br><br>
+                — №3 — <br><br>
                 Все достопримечательности находятся очень близко
               </p>
             </div>
           </li>
           <li>
             <div class="benefits-item grey-back">
-              <p>
-                <span class=heading-regular>Красивая дорога</span><br>
-                — №4 — <br>
+              <p class="benefit-description">
+                <span class="heading-regular">Красивая<br> дорога</span><br><br>
+                — №4 — <br><br>
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </div>
           </li>
           <li>
             <div class="benefits-item grey-back">
-              <p>
-                <span class=heading-regular>Мало туристов</span><br>
-                — №5 — <br>
+              <p class="benefit-description">
+                <span class="heading-regular">Мало<br> туристов</span><br><br>
+                — №5 — <br><br>
                 Большинство едет в Гранд Каньон и толпится там!
               </p>
             </div>
@@ -123,72 +137,74 @@
       <section class="search-section">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="heading-huge">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,<br>
+        <p class="search-intro-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="button form-roll-button" type="button">Поиск гостиницы в Седоне</button>
-        <div class="hotel-search-form">
-          <form action="" method="post">
-            <div>
-              <label for="checkin-date">Дата заезда:</label>
-              <input class="hotel-search-input" type="date" id="checkin-date" name="check-in" value="2017-04-24">
-            </div>
-            <div>
-              <label for="checkout-date">Дата выезда:</label>
-              <input class="hotel-search-input" type="date" id="checkout-date" name="check-out" value="2017-07-04">
-            </div>
-            <div>
-              <label for="grownups">Взрослые:</label>
-              <input class="hotel-search-input" type="number" id="grownups" name="grownups-number" value="2">
-            </div>
-            <div>
-              <label for="kids">Дети:</label>
-              <input class="hotel-search-input" type="number" id="kids" name="kids-number" value="0">
-            </div>
-            <button class="button button-blue hotel-search-button" type="submit">Найти</button>
-          </form>
+        <div class="map-background">
+          <div class ="hotel-search-form">
+            <form action="" method="post">
+              <div class="form-items-wrapper">
+                <div class="form-item">
+                  <label class="inputs-label" for="checkin-date">Дата заезда:</label>
+                  <input class="hotel-search-input" type="date" id="checkin-date" name="check-in" value="2017-04-24">
+                </div>
+                <div action="form-item">
+                  <label class="inputs-label" for="checkout-date">Дата выезда:</label>
+                  <input class="hotel-search-input" type="date" id="checkout-date" name="check-out" value="2017-07-04">
+                </div>
+                <div class="form-item">
+                  <label class="inputs-label" for="grownups">Взрослые:</label>
+                  <input class="hotel-search-input number-input" type="number" id="grownups" name="grownups-number" value="2">
+                </div>
+                <div class="form-item">
+                  <label class="inputs-label" for="kids">Дети:</label>
+                  <input class="hotel-search-input number-input" type="number" id="kids" name="kids-number" value="0">
+                </div>
+              </div>
+              <button class="button button-blue hotel-search-button" type="submit">Найти</button>
+            </form>
+          </div>
         </div>
       </section>
-
-      <section>
-        <h2 class="visually-hidden">Карта штата</h2>
-        <img src="img/map.png" width="1200" height="594" alt="Карта">
-      </section>
     </main>
+
     <footer class="main-footer">
-      <p class="contacts">
-        #VISITSEDONA
-      </p>
-      <p class="contacts">
-        ТЕЛ: +7(495)666-02-66
-      </p>
-      <div class="social-icon-background">
-        <a href="https://twitter.com/">
-          <div class="social-icon-twitter">
-            <p class="visually-hidden">Twitter</p>
-          </div>
-        </a>
+        <p class="contacts">
+          #VISITSEDONA<br>
+          ТЕЛ: +7(495)666-02-66
+        </p>
       </div>
-      <div class="social-icon-background">
-        <a href="https://www.facebook.com/">
-          <div class="social-icon-facebook">
-            <p class="visually-hidden">Facebook</p>
-          </div>
-        </a>
-      </div>
-      <div class="social-icon-background">
-        <a href="https://www.youtube.com">
-          <div class="social-icon-youtube">
-            <p class="visually-hidden">Youtube</p>
-          </div>
-        </a>
+      <div class="social-icons-wrapper">
+        <div class="social-icon-background">
+          <a href="https://twitter.com/">
+            <div class="social-icon-twitter">
+              <p class="visually-hidden">Twitter</p>
+            </div>
+          </a>
+        </div>
+        <div class="social-icon-background">
+          <a href="https://www.facebook.com/">
+            <div class="social-icon-facebook">
+              <p class="visually-hidden">Facebook</p>
+            </div>
+          </a>
+        </div>
+        <div class="social-icon-background">
+          <a href="https://www.youtube.com">
+            <div class="social-icon-youtube">
+              <p class="visually-hidden">Youtube</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="copyright-block">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <span>Website By</span>
-          <div class="htmlacademy-logo">
-          </div>
+        <div>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">Website By</a>
+        </div>
+        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         </a>
+        </div>
       </div>
     </footer>
   </body>
