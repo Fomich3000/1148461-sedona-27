@@ -5,7 +5,8 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-  margin: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 a {
