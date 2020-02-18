@@ -48,7 +48,7 @@
           <li>
             <div class="benefits-item-wrapper">
               <div class="benefits-item blue-back">
-                <p>
+                <p class="benefit-description">
                   <span class="heading-regular heading-white">
                     Настоящий<br>городок</span>
                     <br><br> — №1 — <br><br>
@@ -94,9 +94,9 @@
           <li>
             <div class="benefits-item-wrapper">
               <div class="benefits-item blue-back benefit-backward">
-                <p>
-                  <span class="heading-regular heading-white">Там есть мост дьявола</span><br>
-                    — №2 — <br>
+                <p class="benefit-description">
+                  <span class="heading-regular heading-white">Там есть<br> мост дьявола</span><br><br>
+                    — №2 — <br><br>
                     Да, по нему можно пройти! Если конечно вы осмелитесь
                 </p>
               </div>
@@ -105,27 +105,27 @@
           </li>
           <li>
             <div class="benefits-item grey-back">
-              <p>
-                <span class=heading-regular>Небольшая площадь</span><br>
-                — №3 — <br>
+              <p class="benefit-description">
+                <span class=heading-regular>Небольшая<br> площадь</span><br><br>
+                — №3 — <br><br>
                 Все достопримечательности находятся очень близко
               </p>
             </div>
           </li>
           <li>
             <div class="benefits-item grey-back">
-              <p>
-                <span class="heading-regular">Красивая дорога</span><br>
-                — №4 — <br>
+              <p class="benefit-description">
+                <span class="heading-regular">Красивая<br> дорога</span><br><br>
+                — №4 — <br><br>
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </div>
           </li>
           <li>
             <div class="benefits-item grey-back">
-              <p>
-                <span class="heading-regular">Мало туристов</span><br>
-                — №5 — <br>
+              <p class="benefit-description">
+                <span class="heading-regular">Мало<br> туристов</span><br><br>
+                — №5 — <br><br>
                 Большинство едет в Гранд Каньон и толпится там!
               </p>
             </div>
@@ -133,68 +133,74 @@
         </ul>
       </section>
 
-      <section class="search-section">
+      <section>
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="heading-huge">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,<br>
+        <p class="search-intro-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="button form-roll-button" type="button">Поиск гостиницы в Седоне</button>
         <div class ="hotel-search-form">
           <form action="" method="post">
-            <div>
-              <label for="checkin-date">Дата заезда:</label>
-              <input class="hotel-search-input" type="date" id="checkin-date" name="check-in" value="2017-04-24">
-            </div>
-            <div>
-              <label for="checkout-date">Дата выезда:</label>
-              <input class="hotel-search-input" type="date" id="checkout-date" name="check-out" value="2017-07-04">
-            </div>
-            <div>
-              <label for="grownups">Взрослые:</label>
-              <input class="hotel-search-input" type="number" id="grownups" name="grownups-number" value="2">
-            </div>
-            <div>
-              <label for="kids">Дети:</label>
-              <input class="hotel-search-input" type="number" id="kids" name="kids-number" value="0">
+            <div class="form-items-wrapper">
+              <div class="form-item">
+                <label class="inputs-label" for="checkin-date">Дата заезда:</label>
+                <input class="hotel-search-input" type="date" id="checkin-date" name="check-in" value="2017-04-24">
+              </div>
+              <div action="form-item">
+                <label class="inputs-label" for="checkout-date">Дата выезда:</label>
+                <input class="hotel-search-input" type="date" id="checkout-date" name="check-out" value="2017-07-04">
+              </div>
+              <div class="form-item">
+                <label class="inputs-label" for="grownups">Взрослые:</label>
+                <input class="hotel-search-input number-input" type="number" id="grownups" name="grownups-number" value="2">
+              </div>
+              <div class="form-item">
+                <label class="inputs-label" for="kids">Дети:</label>
+                <input class="hotel-search-input number-input" type="number" id="kids" name="kids-number" value="0">
+              </div>
             </div>
             <button class="button button-blue hotel-search-button" type="submit">Найти</button>
           </form>
-        </div>
+
       </section>
 
-      <section>
+      <section сlass="map-section">
         <h2 class="visually-hidden">Карта штата</h2>
         <img src="img/map.png" width="1200" height="594" alt="Карта">
       </section>
     </main>
     <footer class="main-footer">
-      <p class="contacts">
-        #VISITSEDONA
-      </p>
-      <p class="contacts">
-        ТЕЛ: +7(495)666-02-66
-      </p>
-      <div class="social-icon-background">
-        <a href="https://twitter.com/">
-          <div class="social-icon-twitter">
-            <p class="visually-hidden">Twitter</p>
-          </div>
-        </a>
+      <div class="contacts">
+        <p>
+          #VISITSEDONA
+        </p>
+        <p>
+          ТЕЛ: +7(495)666-02-66
+        </p>
       </div>
-      <div class="social-icon-background">
-        <a href="https://www.facebook.com/">
-          <div class="social-icon-facebook">
-            <p class="visually-hidden">Facebook</p>
-          </div>
-        </a>
-      </div>
-      <div class="social-icon-background">
-        <a href="https://www.youtube.com">
-          <div class="social-icon-youtube">
-            <p class="visually-hidden">Youtube</p>
-          </div>
-        </a>
+      <div class="social-icons-wrapper">
+        <div class="social-icon-background">
+          <a href="https://twitter.com/">
+            <div class="social-icon-twitter">
+              <p class="visually-hidden">Twitter</p>
+            </div>
+          </a>
+        </div>
+        <div class="social-icon-background">
+          <a href="https://www.facebook.com/">
+            <div class="social-icon-facebook">
+              <p class="visually-hidden">Facebook</p>
+            </div>
+          </a>
+        </div>
+        <div class="social-icon-background">
+          <a href="https://www.youtube.com">
+            <div class="social-icon-youtube">
+              <p class="visually-hidden">Youtube</p>
+            </div>
+          </a>
+        </div>
       </div>
       <div class="copyright-block">
         <a href="https://htmlacademy.ru/intensive/htmlcss">

@@ -116,10 +116,13 @@ fieldset {
 }
 
 .benefits-list {
+  width: 1200px;
   list-style: none;
   padding: 0px;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+
 }
 
 .benefits-item {
@@ -127,6 +130,10 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.benefit-description {
+  max-width: 303px;
 }
 
 .benefit-picture {
@@ -147,7 +154,7 @@ fieldset {
   margin-bottom: 85px;
   display: flex;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .features-item {
@@ -156,6 +163,7 @@ fieldset {
 }
 
 .feature-description {
+  width: 290px;
   order: 2
 }
 
@@ -169,6 +177,7 @@ fieldset {
 }
 
 .heading-huge {
+  margin-top: 57px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -183,6 +192,8 @@ fieldset {
 
 .grey-back {
   background-color: #eeeeee;
+  width: 400px;
+  height: 256px;
 }
 
 .button {
@@ -216,7 +227,16 @@ fieldset {
   background-color: #5496bd;
 }
 
+.search-section {
+  position: absolute;
+}
+
+.search-intro-text {
+  margin: 0;
+}
+
 .form-roll-button {
+  margin-top: 52px;
   width: 568px;
   height: 86px;
   font-size: 21px;
@@ -226,21 +246,38 @@ fieldset {
 
 .hotel-search-form,
 .hotel-search-input {
-  margin: auto;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
 }
 
+.hotel-search-input {
+  border: 0;
+  padding: 0;
+}
+
 .hotel-search-form {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 55px;
   width: 568px;
   height: 395px;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   border: 1px;
 }
 
+.form-items-wrapper {
+  width: 458px;
+  height: 228px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 .hotel-search-input {
   background-color: #f2f2f2;
+  width: 346px;
+  height: 38px;
 }
 
 .hotel-search-input:hover {
@@ -249,6 +286,10 @@ fieldset {
 
 .hotel-search-input:active {
   background-color: #ffffff;
+}
+
+.number-input {
+  width: 114px;
 }
 
 .hotel-search-button {
@@ -287,7 +328,7 @@ fieldset {
 }
 
 .sorting-block {
-  font-size: 12px;
+  font-size: 12px;1
 }
 
 .filter-show-button {
@@ -391,7 +432,11 @@ fieldset {
 }
 
 .main-footer {
-  text-align: justify;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .contacts {
@@ -399,6 +444,12 @@ fieldset {
     line-height: 26px;
     font-weight: 700;
     color: #000000;
+}
+
+.social-icons-wrapper {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .social-icon-background {
