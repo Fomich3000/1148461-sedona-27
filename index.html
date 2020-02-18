@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -7,11 +8,10 @@
     <link href="css/styles.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-
-
         <a href="#">
           <div class="main-header-logo">
             <p class="visually-hidden">Логотип города Седона</p>
@@ -25,6 +25,7 @@
         </ul>
       </nav>
     </header>
+
     <main class="index-page">
 
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -133,49 +134,44 @@
         </ul>
       </section>
 
-      <section>
+      <section class="search-section">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="heading-huge">Заинтересовались?</p>
         <p class="search-intro-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <button class="button form-roll-button" type="button">Поиск гостиницы в Седоне</button>
-        <div class ="hotel-search-form">
-          <form action="" method="post">
-            <div class="form-items-wrapper">
-              <div class="form-item">
-                <label class="inputs-label" for="checkin-date">Дата заезда:</label>
-                <input class="hotel-search-input" type="date" id="checkin-date" name="check-in" value="2017-04-24">
+        <div class="map-background">
+          <div class ="hotel-search-form">
+            <form action="" method="post">
+              <div class="form-items-wrapper">
+                <div class="form-item">
+                  <label class="inputs-label" for="checkin-date">Дата заезда:</label>
+                  <input class="hotel-search-input" type="date" id="checkin-date" name="check-in" value="2017-04-24">
+                </div>
+                <div action="form-item">
+                  <label class="inputs-label" for="checkout-date">Дата выезда:</label>
+                  <input class="hotel-search-input" type="date" id="checkout-date" name="check-out" value="2017-07-04">
+                </div>
+                <div class="form-item">
+                  <label class="inputs-label" for="grownups">Взрослые:</label>
+                  <input class="hotel-search-input number-input" type="number" id="grownups" name="grownups-number" value="2">
+                </div>
+                <div class="form-item">
+                  <label class="inputs-label" for="kids">Дети:</label>
+                  <input class="hotel-search-input number-input" type="number" id="kids" name="kids-number" value="0">
+                </div>
               </div>
-              <div action="form-item">
-                <label class="inputs-label" for="checkout-date">Дата выезда:</label>
-                <input class="hotel-search-input" type="date" id="checkout-date" name="check-out" value="2017-07-04">
-              </div>
-              <div class="form-item">
-                <label class="inputs-label" for="grownups">Взрослые:</label>
-                <input class="hotel-search-input number-input" type="number" id="grownups" name="grownups-number" value="2">
-              </div>
-              <div class="form-item">
-                <label class="inputs-label" for="kids">Дети:</label>
-                <input class="hotel-search-input number-input" type="number" id="kids" name="kids-number" value="0">
-              </div>
-            </div>
-            <button class="button button-blue hotel-search-button" type="submit">Найти</button>
-          </form>
-
-      </section>
-
-      <section сlass="map-section">
-        <h2 class="visually-hidden">Карта штата</h2>
-        <img src="img/map.png" width="1200" height="594" alt="Карта">
+              <button class="button button-blue hotel-search-button" type="submit">Найти</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
+
     <footer class="main-footer">
-      <div class="contacts">
-        <p>
-          #VISITSEDONA
-        </p>
-        <p>
+        <p class="contacts">
+          #VISITSEDONA<br>
           ТЕЛ: +7(495)666-02-66
         </p>
       </div>
@@ -203,11 +199,12 @@
         </div>
       </div>
       <div class="copyright-block">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <span>Website By</span>
-          <div class="htmlacademy-logo">
-          </div>
+        <div>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">Website By</a>
+        </div>
+        <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
         </a>
+        </div>
       </div>
     </footer>
   </body>
