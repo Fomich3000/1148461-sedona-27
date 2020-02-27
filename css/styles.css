@@ -10,25 +10,26 @@ body {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 fieldset {
-    display: block;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-block-start: 0;
-    padding-inline-start: 0;
-    padding-inline-end: 0;
-    padding-block-end: 0;
-    min-inline-size: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+  padding-block-end: 0;
+  min-inline-size: 0;
 }
 
 legend {
-    padding-inline-start: 2px; padding-inline-end: 2px;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
 }
 
 .index-page {
@@ -60,8 +61,7 @@ legend {
 
 .main-header-logo {
   background:
-    url("../img/logo-sedona.svg")
-    no-repeat;
+    url("../img/logo-sedona.svg") no-repeat;
   width: 140px;
   height: 72px;
   position: absolute;
@@ -119,9 +119,9 @@ legend {
 .intro-picture {
   height: 508px;
   background:
-  url("../img/intro-mask.svg") no-repeat 0px 452px,
-  url("../img/intro-welcome.svg") no-repeat 372px 75px / 457px 354px,
-  url("../img/background-photo.jpg") no-repeat 0px -83px
+    url("../img/intro-mask.svg") no-repeat 0px 452px,
+    url("../img/intro-welcome.svg") no-repeat 372px 75px / 457px 354px,
+    url("../img/background-photo.jpg") no-repeat 0px -83px
 }
 
 .heading-regular {
@@ -131,6 +131,9 @@ legend {
 }
 
 .slogan {
+  margin: auto;
+  width: 440px;
+  height: 48px;
   line-height: 26px;
   margin-bottom: 30px;
 }
@@ -152,7 +155,6 @@ legend {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .benefits-item {
@@ -182,9 +184,10 @@ legend {
   padding: 0;
   margin: auto;
   margin-top: 60px;
-  margin-bottom: 64px;
-  display: flex;
+  margin-bottom: 66px;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -192,10 +195,6 @@ legend {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.souvenirs-item {
-  padding-bottom: 100px;
 }
 
 .feature-description {
@@ -222,6 +221,7 @@ legend {
 .souvenirs-icon {
   width: 64px;
   height: 76px;
+  margin-top: -5px;
   background: url("../img/souvenir-icon.svg") no-repeat;
 }
 
@@ -231,7 +231,8 @@ legend {
 }
 
 .heading-huge {
-  margin-top: 57px;
+  margin-top: 45px;
+  margin-bottom: 27px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -274,7 +275,7 @@ legend {
 }
 
 .button-blue:hover {
-   background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .button-blue:active {
@@ -287,12 +288,13 @@ legend {
   margin: auto;
   background-image: url('../img/map.png')
 }
+
 .search-intro-text {
   margin: 0;
 }
 
 .form-roll-button {
-  margin-top: 52px;
+  margin-top: 51px;
   width: 568px;
   height: 86px;
   font-size: 21px;
@@ -308,8 +310,14 @@ legend {
 }
 
 .hotel-search-input {
+  box-sizing: border-box;
+  width: 346px;
+  height: 38px;
   border: 0;
   padding: 0;
+  padding-left: 13px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 .hotel-search-form {
@@ -324,17 +332,13 @@ legend {
 }
 
 .form-items-wrapper {
-  width: 458px;
+  width: 462px;
   height: 228px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  text-align: justify;
 }
 
-.hotel-search-input {
-  background-color: #f2f2f2;
-  width: 346px;
-  height: 38px;
+.form-item {
+  margin-bottom: 29px;
 }
 
 .hotel-search-input:hover {
@@ -345,8 +349,51 @@ legend {
   background-color: #ffffff;
 }
 
+.grownups-input-block {
+  display: inline-block;
+  margin-right: 34px;
+}
+
+.kids-input-block {
+  display: inline-block;
+}
+
 .number-input {
   width: 114px;
+  padding-left: 53px;
+  padding-top: 2px;
+}
+
+.inputs-label {
+  margin-right: 18px;
+  margin-left: 2px;
+}
+
+.chekout-input-label {
+  margin-right: 15px;
+}
+
+.grownups-input-label {
+  margin-right: 36px;
+}
+
+.kids-input-label {
+  margin-left: 15px;
+  margin-right: 23px;
+}
+
+.checkin-input-container {
+  position: relative;
+}
+
+.checkout-input-container {
+  position: relative;
+}
+
+.input-calendar {
+  position: absolute;
+  right: 12px;
+  top: 9px;
 }
 
 .hotel-search-button {
@@ -364,9 +411,7 @@ legend {
   height: 217px;
   margin: auto;
   background:
-    url("../img/filter-background.jpg")
-    no-repeat
-    center;
+    url("../img/filter-background.jpg") no-repeat center;
 }
 
 .filter-form {
@@ -434,10 +479,10 @@ legend {
 }
 
 .filter-show-button {
-	border: 1px;
+  border: 1px;
   border-color: white;
-	padding: 0;
-	cursor: pointer;
+  padding: 0;
+  cursor: pointer;
   text-transform: uppercase;
   color: inherit;
   background-color: transparent;
@@ -455,9 +500,9 @@ legend {
 .sort-button {
   background: none;
   opacity: 0.3;
-	border: none;
-	padding: 0;
-	cursor: pointer;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
@@ -471,7 +516,7 @@ legend {
   opacity: 1;
 }
 
-.desc-button, .asc-button{
+.desc-button, .asc-button {
   width: 11px;
   height: 10px;
   border: 0;
@@ -481,28 +526,23 @@ legend {
 }
 
 .asc-button {
-  background: url("../img/icon-up-dir.svg")
-  no-repeat;
+  background: url("../img/icon-up-dir.svg") no-repeat;
 }
 
 .desc-button {
-  background: url("../img/icon-down-dir.svg")
-  no-repeat;
+  background: url("../img/icon-down-dir.svg") no-repeat;
 }
 
 .asc-button:hover {
-    background: url("../img/icon-up-dir-hover.svg")
-    no-repeat;
+  background: url("../img/icon-up-dir-hover.svg") no-repeat;
 }
 
 .asc-button:active {
-  background: url("../img/icon-up-dir-active.svg")
-  no-repeat;
+  background: url("../img/icon-up-dir-active.svg") no-repeat;
 }
 
 .desc-button:hover {
-  background: url("../img/icon-down-dir.svg")
-  no-repeat;
+  background: url("../img/icon-down-dir.svg") no-repeat;
 }
 
 .desc-button:active {
@@ -526,7 +566,7 @@ legend {
 }
 
 .hotels-list>li {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
@@ -570,10 +610,10 @@ legend {
 
 .contacts {
   margin-left: 132px;
-    font-size: 21px;
-    line-height: 30px;
-    font-weight: 700;
-    color: #000000;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .social-icons-wrapper {
@@ -594,15 +634,13 @@ legend {
 }
 
 .social-icon-background:active {
-    background-color: #5496bd;
+  background-color: #5496bd;
 }
 
 .social-icon-twitter {
   height: 48px;
   background:
-    url("../img/tw-icon.svg")
-    no-repeat
-    center center / 17px 15px;
+    url("../img/tw-icon.svg") no-repeat center center / 17px 15px;
 }
 
 .social-icon-twitter:active {
@@ -612,9 +650,7 @@ legend {
 .social-icon-facebook {
   height: 48px;
   background:
-    url("../img/fb-icon.svg")
-    no-repeat
-    center center / 12px 22px;
+    url("../img/fb-icon.svg") no-repeat center center / 12px 22px;
 }
 
 .social-icon-facebook:active {
@@ -624,9 +660,7 @@ legend {
 .social-icon-youtube {
   height: 48px;
   background:
-    url("../img/youtube-icon.svg")
-    no-repeat
-    center center / 20px 16px;
+    url("../img/youtube-icon.svg") no-repeat center center / 20px 16px;
 }
 
 .social-icon-youtube:active {
@@ -651,8 +685,7 @@ legend {
   width: 115px;
   height: 41px;
   background:
-    url("../img/logo-htmlacademy.svg")
-    no-repeat;
+    url("../img/logo-htmlacademy.svg") no-repeat;
 }
 
 .htmlacademy-logo:hover {
