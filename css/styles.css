@@ -68,10 +68,6 @@ legend {
 }
 
 .main-header-logo {
-  background:
-    url("../img/logo-sedona.svg") no-repeat;
-  width: 140px;
-  height: 72px;
   position: absolute;
   left: 50%;
   transform: translate(-50%);
@@ -116,19 +112,18 @@ legend {
   opacity: 0.3;
 }
 
-.intro-block {
+.intro-picture {
   width: 1200px;
   height: 508px;
   margin-bottom: 59px;
   background-color: #81b3d2;
-}
-
-.intro-picture {
-  height: 508px;
   background:
     url("../img/intro-mask.svg") no-repeat 0px 452px,
-    url("../img/intro-welcome.svg") no-repeat 372px 75px / 457px 354px,
     url("../img/background-photo.jpg") no-repeat 0px -83px
+}
+
+.welcome-text-picture {
+  margin-top: 77px;
 }
 
 .heading-regular {
@@ -169,13 +164,6 @@ legend {
 .benefits-item {
   width: 400px;
   padding-bottom: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.benefit-description {
-  width: 303px;
 }
 
 .benefit-picture {
@@ -191,8 +179,8 @@ legend {
 .features-list {
   width: 1200px;
   padding: 0;
-  margin-top: 60px;
-  margin-bottom: 66px;
+  margin-top: 142px;
+  margin-bottom: 72px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -200,36 +188,39 @@ legend {
 }
 
 .features-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 400px;
+  position: relative;
+  padding: 0 57px;
 }
 
-.feature-description {
-  width: 290px;
-  order: 2
+.features-icon::after {
+  content: "";
 }
 
-.feature-icon {
-  margin-bottom: -6px;
-}
-
-.housing-icon {
+.housing-icon::after {
+  bottom: 128px;
+  left: 162px;
+  position: absolute;
   width: 75px;
   height: 72px;
-  background: url("../img/housing-icon.svg") no-repeat;
-}
+  background: url(../img/housing-icon.svg) no-repeat;
+  }
 
-.eat-icon {
+.eat-icon::after {
+  bottom: 130px;
+  left: 163px;
+  position: absolute;
   width: 74px;
   height: 70px;
   background: url("../img/eat-icon.svg") no-repeat;
 }
 
-.souvenirs-icon {
+.souvenirs-icon::after {
+  bottom: 128px;
+  left: 168px;
+  position: absolute;
   width: 64px;
   height: 76px;
-  margin-top: -5px;
   background: url("../img/souvenir-icon.svg") no-repeat;
 }
 
@@ -256,9 +247,14 @@ legend {
 }
 
 .grey-back {
+  padding: 31px 60px;
   background-color: #eeeeee;
   width: 400px;
   height: 246px;
+}
+
+.benefit-heading {
+
 }
 
 .button {
