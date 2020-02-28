@@ -43,9 +43,9 @@
           <li>
             <div class="benefits-item-wrapper">
               <div class="benefits-item blue-back">
-                  <h3 class="heading-regular heading-white">Настоящий городок</h3>
+                  <h3 class="heading-regular heading-white benefit-heading">Настоящий городок</h3>
                   <span>— №1 —</span>
-                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь></p>
+                  <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <img class="benefit-picture" src="img/feature-picture-1.jpg" width="800" height="256" alt="Фото с атмосферным видом города">
             </div>
@@ -67,7 +67,7 @@
           <li>
             <div class="benefits-item-wrapper">
               <div class="benefits-item blue-back benefit-backward">
-                  <h3 class="heading-regular heading-white">Там есть<br> мост дьявола</h3>
+                  <h3 class="heading-regular heading-white benefit-heading">Там есть<br> мост дьявола</h3>
                   <span>— №2 —</span>
                   <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
               </div>
@@ -103,27 +103,38 @@
           <div class="hotel-search-form">
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="form-items-wrapper">
-                <div class="form-item">
-                  <div class="checkin-input-container">
+                <div class="form-item checkin-input-container">
                     <label class="inputs-label" for="checkin-date">Дата заезда:</label>
                     <input class="hotel-search-input" type="text" id="checkin-date" name="check-in" value="24 апреля 2017">
-                    <img class="input-calendar checkin-input-calendar" src="img/calendar.svg" width="21" height="22">
-                  </div>
+                    <button type="button" class="input-calendar checkin-input-calendar">
+                      <p class="visually-hidden">Кнопка выбора даты заезда</p>
+                    </button>
                 </div>
-                <div class="form-item">
-                  <div class="checkout-input-container">
+                <div class="form-item checkout-input-container">
                     <label class="inputs-label chekout-input-label" for="checkout-date">Дата выезда:</label>
                     <input class="hotel-search-input" type="text" id="checkout-date" name="check-out" value="4 июня 2017">
-                    <img class="input-calendar checkout-input-calendar" src="img/calendar.svg" width="21" height="22">
-                  </div>
+                    <button type="button" class="input-calendar checkout-input-calendar">
+                      <p class="visually-hidden">Кнопка выбора даты выезда</p>
+                    </button>
                 </div>
-                <div class="form-item grownups-input-block">
+                <div class="form-item grownups-input-container">
                   <label class="inputs-label grownups-input-label" for="grownups">Взрослые:</label>
                   <input class="hotel-search-input number-input" type="text" id="grownups" name="grownups-number" value="2">
+                  <button type="button" class="input-less">
+                    <p class="visually-hidden">Кнопка уменьшения количества взрослых гостей</p>
+                  </button>
+                  <button type="button" class="input-more">
+                    <p class="visually-hidden">Кнопка увеличения количества взрослых гостей</p>
                 </div>
-                <div class="form-item kids-input-block">
+                <div class="form-item kids-input-container">
                   <label class="inputs-label kids-input-label" for="kids">Дети:</label>
                   <input class="hotel-search-input number-input" type="text" id="kids" name="kids-number" value="0">
+                  <button type="button" class="input-less">
+                    <p class="visually-hidden">Кнопка уменьшения количества гостей детей</p>
+                  </button>
+                  <button type="button" class="input-more">
+                    <p class="visually-hidden">Кнопка увеличения количества гостей детей</p>
+                  </button>
                 </div>
               </div>
               <button class="button button-blue hotel-search-button" type="submit">Найти</button>
@@ -133,10 +144,10 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer main-footer-index">
       <p class="contacts">
         #VISITSEDONA<br>
-        ТЕЛ: +7(495)666-02-66
+        ТЕЛ: <a class="phone" href="tel:84956660266">+7(495)666-02-66</a>
       </p>
       <div class="social-icons-wrapper">
         <div class="social-icon-background">

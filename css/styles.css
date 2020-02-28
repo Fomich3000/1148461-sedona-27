@@ -49,6 +49,10 @@ legend {
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
+.content-wrapper-hotels {
+  text-align: justify;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -242,6 +246,7 @@ legend {
 }
 
 .blue-back {
+  padding: 40px 60px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -254,8 +259,10 @@ legend {
 }
 
 .benefit-heading {
-
+  width: 100%;
+  padding: 0 61px;
 }
+
 
 .button {
   font: inherit;
@@ -286,6 +293,11 @@ legend {
 
 .button-blue:active {
   background-color: #5496bd;
+}
+
+.search-footer-wrapper {
+  width: 1200px;
+  position: relative;
 }
 
 .map-background {
@@ -320,7 +332,7 @@ legend {
   width: 346px;
   height: 38px;
   border: 0;
-  padding: 0;
+  padding: 0 37px;
   padding-left: 13px;
   text-transform: uppercase;
   background-color: #f2f2f2;
@@ -355,39 +367,6 @@ legend {
   background-color: #ffffff;
 }
 
-.grownups-input-block {
-  display: inline-block;
-  margin-right: 34px;
-}
-
-.kids-input-block {
-  display: inline-block;
-}
-
-.number-input {
-  width: 114px;
-  padding-left: 53px;
-  padding-top: 2px;
-}
-
-.inputs-label {
-  margin-right: 18px;
-  margin-left: 2px;
-}
-
-.chekout-input-label {
-  margin-right: 15px;
-}
-
-.grownups-input-label {
-  margin-right: 36px;
-}
-
-.kids-input-label {
-  margin-left: 15px;
-  margin-right: 23px;
-}
-
 .checkin-input-container {
   position: relative;
 }
@@ -396,10 +375,94 @@ legend {
   position: relative;
 }
 
+.inputs-label {
+  margin-right: 18px;
+  margin-left: 2px;
+}
+
+.checkout-input-label {
+  margin-right: 15px;
+}
+
 .input-calendar {
   position: absolute;
+  width: 21px;
+  height: 22px;
   right: 12px;
   top: 9px;
+  border: 0;
+  padding: 0;
+  background: url("../img/calendar.svg") no-repeat;
+}
+
+.grownups-input-container {
+  display: inline-block;
+  position: relative;
+  margin-right: 34px;
+}
+
+.kids-input-container {
+  display: inline-block;
+  position: relative;
+}
+
+.kids-input-label {
+  margin-left: 15px;
+  margin-right: 23px;
+}
+
+.grownups-input-label {
+  margin-right: 36px;
+}
+
+.number-input {
+  width: 114px;
+  padding-left: 53px;
+  padding-top: 2px;
+}
+
+.input-less, .input-more {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.input-less {
+  top: 9px;
+  right: 79px;
+}
+
+.input-more {
+  top: 9px;
+  right: 13px;
+}
+
+.input-less::before,
+.input-more::before,
+.input-more::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  width: 11px;
+  height: 3px;
+  background-color: #ababab;
+}
+
+.input-more::before,
+.input-more::after {
+  top: 9px;
+  right: 1px;
+  width: 11px;
+  height: 3px;
+}
+
+.input-more::after {
+  transform: rotate(90deg);
 }
 
 .hotel-search-button {
@@ -420,7 +483,7 @@ legend {
 }
 
 .filter-form {
-  width: 1056px;
+  width: 1200px;
   min-height: 153px;
   display: flex;
   align-items: center;
@@ -437,28 +500,58 @@ legend {
 }
 
 .price-filter {
-  width: 318px;
-  margin-left: auto;
+  width: 330px;
+  margin-left: 300px;
 }
 
-.price-from-block {
-  width: 157px;
+.price-filter-heading {
+  margin-bottom: 9px;
 }
 
-.price-to-block {
-  width: 155px;
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  font-size: 0;
+}
+
+.price-controls::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .price-from,
+.price-controls .price-to {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
 }
 
 .filter-section {
+  margin: auto;
   color: #ffffff;
-}
-
-#price-from, #price-to {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background: none;
-  color: inherit;
 }
 
 .white-border {
@@ -579,7 +672,7 @@ legend {
 }
 
 .rating-block {
-  margin-left: auto;
+  margin-left: 300px;
 }
 
 .result-item {
@@ -610,12 +703,21 @@ legend {
   opacity: 0.9;
 }
 
+.main-footer-index {
+  position: absolute;
+
+}
+
 .contacts {
   margin-left: 132px;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+}
+
+.phone {
+  color: inherit;
 }
 
 .social-icons-wrapper {
