@@ -408,12 +408,10 @@ a {
 
 .input-calendar {
   position: absolute;
-  width: 21px;
-  height: 22px;
   right: 7px;
   top: 7px;
-  border: 0;
-  padding: 0;
+  background: none;
+  border: none;
   cursor: pointer;
 }
 
@@ -466,7 +464,7 @@ a {
   height: 20px;
   padding: 0;
   background: none;
-  border: 0;
+  border: none;
   cursor: pointer;
 }
 
@@ -507,6 +505,12 @@ a {
 .input-less:hover:before,
 .input-more:hover::before,
 .input-more:hover::after {
+  background-color: #000000;
+}
+
+.input-less:focus:before,
+.input-more:focus::before,
+.input-more:focus::after {
   background-color: #000000;
 }
 
@@ -635,6 +639,13 @@ a {
   height: 23px;
   background: url("../img/checkbox-off.svg") no-repeat;
 }
+
+.filter-option-checkbox:focus+label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 
 .filter-option-checkbox:checked+label::before {
   background: url("../img/checkbox-on.svg") no-repeat;
