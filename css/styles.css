@@ -151,7 +151,7 @@ a {
   height: 48px;
   line-height: 26px;
   margin: auto;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .benefits-intro-text {
@@ -246,8 +246,8 @@ a {
 .heading-huge {
   width: 305px;
   margin: auto;
-  margin-top: 62px;
-  margin-bottom: 27px;
+  margin-top: 51px;
+  margin-bottom: 22px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -265,7 +265,7 @@ a {
   padding: 26px 60px;
   background-color: #eeeeee;
   width: 400px;
-  height: 246px;
+  height: 255px;
 }
 
 .benefit-heading {
@@ -326,12 +326,13 @@ a {
 }
 
 .search-intro-text {
-  width: 396px;
+  width: 463px;
+  line-height: 26px;
   margin: auto;
 }
 
 .form-roll-button {
-  margin-top: 51px;
+  margin-top: 44px;
   width: 568px;
   height: 86px;
   font-size: 21px;
@@ -413,8 +414,8 @@ a {
   position: absolute;
   width: 21px;
   height: 22px;
-  right: 12px;
-  top: 9px;
+  right: 7px;
+  top: 7px;
   border: 0;
   padding: 0;
   cursor: pointer;
@@ -927,7 +928,7 @@ a {
 
 .contacts {
   width: 400px;
-  padding-left: 123px;
+  padding-left: 124px;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
@@ -936,8 +937,8 @@ a {
 
 .contacts-hashtag,
 .contacts-phone {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 1px;
+  margin-bottom: 2px;
 }
 
 .phone {
@@ -946,7 +947,7 @@ a {
 
 .social-icons-list {
   width: 400px;
-  padding-left: 124px;
+  padding-left: 125px;
   display: flex;
   list-style: none;
 }
@@ -1013,7 +1014,7 @@ a {
   display: block;
   width: 400px;
   height: 41px;
-  padding-left: 184px;
+  padding-left: 185px;
   font-size: 14px;
   line-height: 26px;
 }
@@ -1021,7 +1022,7 @@ a {
 .copyright-span {
   position: absolute;
   top: 7px;
-  right: 224px;
+  right: 223px;
   color: #000000;
   padding: 0px;
   vertical-align: middle;
