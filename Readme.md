@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Фома Багиян](https://up.htmlacademy.ru/htmlcss/27/user/1148461).
-* Наставник: [Рашид Шамсудинов](https://htmlacademy.ru/profile/id445445).
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
