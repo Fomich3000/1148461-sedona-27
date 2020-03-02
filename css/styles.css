@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -63,12 +68,13 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 1200px;
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 56px;
+  min-height: 56px;
 }
 
 .site-navigation>li {
@@ -160,6 +166,7 @@ a {
   width: 1200px;
   min-height: 256px;
   display: flex;
+  background-color: #81b3d2;
   justify-content: center;
 }
 
@@ -177,7 +184,8 @@ a {
 }
 
 .benefit-picture {
-  min-height: 256px;
+  width: 800px;
+  height: 256px;
   margin: 0;
   padding: 0;
 }
@@ -203,31 +211,36 @@ a {
   padding: 0 57px;
 }
 
-.features-icon::after {
+.features-item p {
+  width: 290px;
+  min-height: 50px;
+}
+
+.features-icon::before {
   content: "";
 }
 
-.housing-icon::after {
-  bottom: 128px;
-  left: 162px;
+.housing-icon::before {
+  bottom: 108%;
+  left: 41%;
   position: absolute;
   width: 75px;
   height: 72px;
-  background: url(../img/housing-icon.svg) no-repeat;
+  background: url("../img/housing-icon.svg") no-repeat;
 }
 
-.eat-icon::after {
-  bottom: 130px;
-  left: 163px;
+.eat-icon::before {
+  bottom: 108%;
+  left: 41%;
   position: absolute;
   width: 74px;
   height: 70px;
   background: url("../img/eat-icon.svg") no-repeat;
 }
 
-.souvenirs-icon::after {
-  bottom: 128px;
-  left: 168px;
+.souvenirs-icon::before {
+  bottom: 106%;
+  left: 43%;
   position: absolute;
   width: 64px;
   height: 76px;
