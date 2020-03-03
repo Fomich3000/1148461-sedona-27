@@ -109,8 +109,7 @@
                 <div class="form-item checkin-input-container">
                   <label class="inputs-label" for="checkin-date">Дата заезда:</label>
                   <input class="hotel-search-input" type="text" id="checkin-date" name="check-in" value="24 апреля 2017">
-                  <span class="visually-hidden">Кнопка выбора даты заезда</span>
-                  <button type="button" class="input-calendar checkin-input-calendar">
+                  <button type="button" class="input-calendar checkin-input-calendar" aria-label="Выбрать дату заезда">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                       <path
                         d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z">
@@ -124,8 +123,7 @@
                 <div class="form-item checkout-input-container">
                   <label class="inputs-label chekout-input-label" for="checkout-date">Дата выезда:</label>
                   <input class="hotel-search-input" type="text" id="checkout-date" name="check-out" value="4 июля 2017">
-                  <span class="visually-hidden">Кнопка выбора даты выезда</span>
-                  <button type="button" class="input-calendar checkout-input-calendar">
+                  <button type="button" class="input-calendar checkout-input-calendar" aria-label="Выбрать дату выезда">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22">
                       <path
                         d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z">
@@ -139,20 +137,16 @@
                 <div class="form-item grownups-input-container">
                   <label class="inputs-label grownups-input-label" for="grownups">Взрослые:</label>
                   <input class="hotel-search-input number-input" type="text" id="grownups" name="grownups-number" value="2">
-                  <span class="visually-hidden">Кнопка уменьшения количества взрослых гостей</span>
-                  <button type="button" class="input-less">
+                  <button type="button" class="input-less" aria-label="Уменьшить количество взрослых гостей">
                   </button>
-                  <span class="visually-hidden">Кнопка увеличения количества взрослых гостей</span>
-                  <button type="button" class="input-more"></button>
+                  <button type="button" class="input-more" aria-label="Увеличить количество взрослых гостей"></button>
                 </div>
                 <div class="form-item kids-input-container">
                   <label class="inputs-label kids-input-label" for="kids">Дети:</label>
                   <input class="hotel-search-input number-input" type="text" id="kids" name="kids-number" value="0">
-                  <span class="visually-hidden">Кнопка уменьшения количества гостей детей</span>
-                  <button type="button" class="input-less">
+                  <button type="button" class="input-less" aria-label="Уменьшить количество гостей детей">
                   </button>
-                  <span class="visually-hidden">Кнопка увеличения количества гостей детей</span>
-                  <button type="button" class="input-more">
+                  <button type="button" class="input-more" aria-label="Увеличить количество гостей детей">
                   </button>
                 </div>
               </div>
