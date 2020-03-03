@@ -57,6 +57,7 @@ img {
   font-weight: 700;
   color: #333333;
   line-height: 26px;
+  min-height: 55px;
   height: 56px;
 }
 
@@ -81,7 +82,7 @@ img {
   display: block;
   width: 239px;
   letter-spacing: normal;
-  line-height: 10px;
+  line-height: 26px;
 }
 
 .nav-info,
@@ -159,7 +160,8 @@ img {
 .benefits-intro-text {
   width: 500px;
   margin: auto;
-  margin-bottom: 52px;
+  margin-bottom: 54px;
+  letter-spacing: 0.1px;
 }
 
 .benefits-item-wrapper {
@@ -198,7 +200,7 @@ img {
   width: 1200px;
   padding: 0;
   margin-top: 142px;
-  margin-bottom: 69px;
+  margin-bottom: 60px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -239,8 +241,9 @@ img {
 }
 
 .souvenirs-icon::before {
-  bottom: 106%;
+  bottom: 108%;
   left: 43%;
+  transform: translateX(-2px);
   position: absolute;
   width: 64px;
   height: 76px;
@@ -271,10 +274,11 @@ img {
 }
 
 .grey-back {
-  padding: 26px 60px;
+  padding: 0px 60px;
+  padding-top: 26px;
   background-color: #eeeeee;
   width: 400px;
-  height: 255px;
+  min-height: 255px;
 }
 
 .benefit-heading {
@@ -285,10 +289,11 @@ img {
 
 .benefit-description {
   margin-top: 21px;
+  min-height: 80px;
 }
 
 .blue-back p {
-  margin-top: 24px;
+  margin-top: 23px;
 }
 
 .button {
@@ -329,6 +334,7 @@ img {
 }
 
 .map-background {
+  position: relative;
   width: 1200px;
   height: 593px;
   background-image: url('../img/map.png')
@@ -341,12 +347,41 @@ img {
 }
 
 .form-roll-button {
-  margin-top: 44px;
+  margin-top: 45px;
   width: 568px;
   height: 86px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+
+.form-close {
+  display: none;
+}
+
+.form-show-animated
+{
+  animation: fade-in-down 0.5s;
+}
+
+.map-iframe {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,-50%,0);
+        transform: translate3d(0,-50%,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
 }
 
 .hotel-search-form,
@@ -368,9 +403,16 @@ img {
 }
 
 .hotel-search-form {
+  position: absolute;
+  left: 316px;
+  z-index: 2;
   box-sizing: border-box;
   margin: auto;
-  padding: 55px;
+  padding-bottom: 56px;
+  padding-top: 56px;
+  padding-left: 51px;
+  padding-right: 49px;
+  letter-spacing: 0.6px;
   border: 1px;
   width: 568px;
   height: 395px;
@@ -421,8 +463,8 @@ img {
 
 .input-calendar {
   position: absolute;
-  right: 7px;
-  top: 7px;
+  right: 2px;
+  top: 6px;
   background: none;
   border: none;
   cursor: pointer;
@@ -462,7 +504,7 @@ img {
 }
 
 .grownups-input-label {
-  margin-right: 36px;
+  margin-right: 33px;
 }
 
 .number-input {
@@ -547,6 +589,7 @@ img {
   height: 217px;
   background:
     url("../img/filter-background.jpg") no-repeat center;
+    letter-spacing: 0.2px;
 }
 
 .filter-form {
@@ -609,8 +652,8 @@ img {
 
 .infrastructure {
   width: 139px;
-  margin-right: 116px;
-  margin-left: 71px;
+  margin-right: 118px;
+  margin-left: 70px;
 }
 
 .infrastructure legend,
@@ -621,10 +664,12 @@ img {
 .white-heading {
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.2px;
 }
 
 .housing-type {
   width: 137px;
+  letter-spacing: 0.2px;
 }
 
 .filter-option {
@@ -666,7 +711,7 @@ img {
 
 .price-filter {
   width: 317px;
-  margin-left: 348px;
+  margin-left: 346px;
 }
 
 .price-filter-heading {
@@ -684,7 +729,7 @@ img {
 
 .price-controls::after {
   position: absolute;
-  right: 50%;
+  right: 49%;
   top: 50%;
   transform: translate(-50%, -50%);
   content: "";
@@ -750,8 +795,8 @@ img {
 .filter-show-button {
   border: 2px solid #ffffff;
   border-radius: 2px;
-  padding: 9px 35px;
-  margin: 0px 83px;
+  padding: 8px 34px;
+  margin: 0px 84px;
   cursor: pointer;
   text-transform: uppercase;
   color: inherit;
@@ -866,12 +911,16 @@ img {
 
 .housing-image {
   margin-right: 30px;
+  width: 135px;
+  height: 90px;
 }
 
 .hotel-name {
   display: block;
+  max-width: 400px
   color: #333333;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
 }
 
 .hotel-name:hover,
@@ -921,7 +970,10 @@ img {
 }
 
 .result-item a.button {
-  padding: 4px 17px;
+  margin-right: 2px;
+  padding: 0px 17px;
+  padding-top: 6px;
+  padding-bottom: 4px;
 }
 
 .rating-value {
@@ -957,6 +1009,7 @@ img {
   position: absolute;
   top: -120px;
   background-color: rgba(255, 255, 255, 0.9);
+  z-index: 3;
 }
 
 .contacts {
