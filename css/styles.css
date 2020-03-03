@@ -91,6 +91,7 @@ img {
 .site-navigation>li {
   display: block;
   width: 239px;
+  padding: 15px 0px;
   letter-spacing: normal;
   line-height: 26px;
 }
@@ -369,15 +370,20 @@ img {
   width: 463px;
   line-height: 26px;
   margin: auto;
+  margin-bottom: 132px;
 }
 
 .form-roll-button {
-  margin-top: 45px;
-  width: 568px;
-  height: 86px;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
+  position: absolute;
+    z-index: 3;
+    right: 50%;
+    bottom: 100%;
+    transform: translateX(50%);
+    width: 568px;
+    height: 86px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 .form-close {
@@ -389,6 +395,16 @@ img {
   animation: fade-in-down 0.5s;
 }
 
+.form-close-animated {
+  -webkit-animation: fade-out-up 0.5s;
+  animation: fade-out-up 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.form-error {
+  animation: shake 0.6s;
+}
+
 .map-iframe {
   position: absolute;
   right: 0px;
@@ -398,7 +414,7 @@ img {
 @-webkit-keyframes fade-in-down {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -50%, 0);
+    -webkit-transform: translate3d(0, -25%, 0);
     transform: translate3d(0, -50%, 0)
   }
 
@@ -412,8 +428,8 @@ img {
 @keyframes fade-in-down {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, -50%, 0);
-    transform: translate3d(0, -50%, 0)
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0)
   }
 
   to {
@@ -422,6 +438,53 @@ img {
     transform: translateZ(0)
   }
 }
+
+@-webkit-keyframes fade-out-up {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+@keyframes fade-out-up {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -25%, 0);
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 
 .hotel-search-form,
 .hotel-search-input {

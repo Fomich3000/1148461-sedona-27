@@ -7,13 +7,12 @@ var kids = document.querySelector(".kids-input");
 var isStorageSupport = true;
 var storage = "";
 
- try {
+try {
   storageGrownups = localStorage.getItem("grownups");
   storageKids = localStorage.getItem("kids");
 } catch (err) {
   isStorageSupport = false;
 }
-
 
 if (form.classList.contains("form-show")) {
   form.classList.remove("form-show");
@@ -27,26 +26,33 @@ link.addEventListener("click", function(evt) {
     form.classList.add("form-show", "form-show-animated");
     if (storageGrownups) {
       grownups.value = storageGrownups;
-      }
+    }
     if (storageKids) {
       kids.value = storageKids;
     }
-  } else {
+  } else if (form.classList.contains("form-show", "form-show-animated", "form-error")) {
+    form.classList.remove("form-show", "form-show-animated", "form-error");
+    form.classList.add("form-close-animated");
+  } else if (form.classList.contains("form-show" && "form-show-animated")) {
     evt.preventDefault();
     form.classList.remove("form-show", "form-show-animated");
-    form.classList.add("form-close");
+    form.classList.add("form-close-animated");
+  } else {
+    form.classList.remove("form-close-animated");
+    form.classList.add("form-show", "form-show-animated");
   }
 });
 
 form.addEventListener("submit", function(evt) {
-  if (!checkin.value || !checkout.value || !grownups.value || !kids.value )
-  {
+  if (!checkin.value || !checkout.value || !grownups.value || !kids.value) {
     evt.preventDefault();
-    console.log("Пожалуйста, заполните все поля для отправки формы!");
+    form.classList.remove("form-error");
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add("form-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("kids", kids.value);
       localStorage.setItem("grownups", grownups.value);
+    }
   }
-}
-}); 
+});
