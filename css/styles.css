@@ -369,13 +369,13 @@ a.current {
   line-height: 26px;
 }
 
-.form-close {
-  display: none;
-}
-
-.form-show-animated {
+.form-show {
   -webkit-animation: fade-in-down 0.7s;
   animation: fade-in-down 0.7s;
+}
+
+.form-close {
+  display: none;
 }
 
 .form-close-animated {

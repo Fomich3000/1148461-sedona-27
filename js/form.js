@@ -23,23 +23,23 @@ link.addEventListener("click", function(evt) {
   if (form.classList.contains("form-close")) {
     evt.preventDefault();
     form.classList.remove("form-close");
-    form.classList.add("form-show", "form-show-animated");
+    form.classList.add("form-show");
     if (storageGrownups) {
       grownups.value = storageGrownups;
     }
     if (storageKids) {
       kids.value = storageKids;
     }
-  } else if (form.classList.contains("form-show", "form-show-animated", "form-error")) {
-    form.classList.remove("form-show", "form-show-animated", "form-error");
+  } else if (form.classList.contains("form-error" && "form-show")) {
+    form.classList.remove("form-error");
     form.classList.add("form-close-animated");
-  } else if (form.classList.contains("form-show" && "form-show-animated")) {
-    evt.preventDefault();
-    form.classList.remove("form-show", "form-show-animated");
-    form.classList.add("form-close-animated");
-  } else {
+    form.classList.remove("form-show");
+  } else if (form.classList.contains("form-close-animated")) {
     form.classList.remove("form-close-animated");
-    form.classList.add("form-show", "form-show-animated");
+    form.classList.add("form-show");
+  } else {
+    form.classList.remove("form-show");
+    form.classList.add("form-close-animated");
   }
 });
 
