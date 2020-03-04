@@ -57,8 +57,7 @@ img {
   font-weight: 700;
   color: #333333;
   line-height: 26px;
-  min-height: 55px;
-  height: 56px;
+  min-height: 56px;
 }
 
 .main-header-logo {
@@ -711,7 +710,7 @@ a.current {
 .background-blurred {
   box-sizing: border-box;
   width: 1200px;
-  height: 217px;
+  min-height: 217px;
   background:
     url("../img/filter-background.jpg") no-repeat center;
   background-color: #908484;
