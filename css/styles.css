@@ -968,6 +968,7 @@ a.current {
 
 .desc-button, .asc-button {
   display: inline-block;
+  vertical-align: baseline;
   width: 11px;
   height: 10px;
   border: 0;
