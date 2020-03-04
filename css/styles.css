@@ -1,18 +1,16 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   font-size: 14px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
@@ -41,7 +39,6 @@ img {
   width: 1200px;
   margin: auto;
   background-color: #ffffff;
-  -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
@@ -68,18 +65,12 @@ img {
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
   transform: translateX(-50%);
 }
 
 .site-navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 1200px;
   list-style: none;
@@ -131,6 +122,10 @@ img {
   color: #000000;
 }
 
+a.current {
+  color: #766357;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: #81b3d2;
@@ -144,7 +139,7 @@ img {
   width: 1200px;
   height: 508px;
   margin-bottom: 59px;
-  background-color: #81b3d2;
+  background-color: #908484;
   background:
     url("../img/intro-mask.svg") no-repeat 0px 452px,
     url("../img/background-photo.jpg") no-repeat 0px -83px
@@ -161,7 +156,7 @@ img {
 }
 
 .slogan {
-  width: 440px;
+  width: 500px;
   height: 48px;
   line-height: 26px;
   margin: auto;
@@ -178,12 +173,8 @@ img {
 .benefits-item-wrapper {
   width: 1200px;
   min-height: 256px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #81b3d2;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -191,10 +182,7 @@ img {
   width: 1200px;
   list-style: none;
   padding: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -208,11 +196,10 @@ img {
   height: 256px;
   margin: 0;
   padding: 0;
+  background-color: #E29686;
 }
 
 .benefit-backward {
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
   order: 2;
 }
 
@@ -222,12 +209,8 @@ img {
   margin-top: 142px;
   margin-bottom: 60px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
@@ -268,7 +251,6 @@ img {
   bottom: 108%;
   left: 43%;
   -webkit-transform: translateX(-2px);
-  -ms-transform: translateX(-2px);
   transform: translateX(-2px);
   position: absolute;
   width: 64px;
@@ -363,7 +345,7 @@ img {
   position: relative;
   width: 1200px;
   height: 593px;
-  background-image: url('../img/map.png')
+  background-image: url("../img/map.png")
 }
 
 .search-intro-text {
@@ -378,6 +360,7 @@ img {
   z-index: 3;
   right: 50%;
   bottom: 100%;
+  -webkit-transform: translateX(50%);
   transform: translateX(50%);
   width: 568px;
   height: 86px;
@@ -391,23 +374,26 @@ img {
 }
 
 .form-show-animated {
-  -webkit-animation: fade-in-down 0.5s;
-  animation: fade-in-down 0.5s;
+  -webkit-animation: fade-in-down 0.7s;
+  animation: fade-in-down 0.7s;
 }
 
 .form-close-animated {
-  -webkit-animation: fade-out-up 0.5s;
-  animation: fade-out-up 0.5s;
+  -webkit-animation: fade-out-up 0.8s;
+  animation: fade-out-up 0.8s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
 .form-error {
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
 .map-iframe {
   position: absolute;
   right: 0px;
+  border: none;
   z-index: 1;
 }
 
@@ -415,7 +401,7 @@ img {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -25%, 0);
-    transform: translate3d(0, -50%, 0)
+    transform: translate3d(0, -25%, 0)
   }
 
   to {
@@ -452,21 +438,27 @@ img {
 }
 
 @keyframes fade-out-up {
-  from {
+  0% {
     opacity: 1;
   }
 
-  to {
+  90% {
     opacity: 0;
     -webkit-transform: translate3d(0, -25%, 0);
     transform: translate3d(0, -25%, 0);
   }
+
+  100% {
+    -webkit-transform: translate3d(0, -1000%, 0);
+    transform: translate3d(0, -1000%, 0);
+  }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
 
   0%,
   100% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 
@@ -475,6 +467,7 @@ img {
   50%,
   70%,
   90% {
+    -webkit-transform: translateX(-10px);
     transform: translateX(-10px);
   }
 
@@ -482,6 +475,33 @@ img {
   40%,
   60%,
   80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
     transform: translateX(10px);
   }
 }
@@ -494,7 +514,6 @@ img {
 }
 
 .hotel-search-input {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 346px;
   height: 38px;
@@ -509,7 +528,6 @@ img {
   position: absolute;
   left: 316px;
   z-index: 2;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: auto;
   padding-bottom: 56px;
@@ -520,27 +538,19 @@ img {
   border: 1px;
   width: 568px;
   height: 395px;
-  -webkit-box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
 }
 
 .form-items-wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .form-item {
   margin-bottom: 29px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -550,6 +560,8 @@ img {
 
 .hotel-search-input:focus {
   background-color: #ffffff;
+  border: solid 2px #e5e5e5;
+  outline: none;
 }
 
 .checkin-input-container {
@@ -667,7 +679,6 @@ img {
 
 .input-more::after {
   -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -698,18 +709,16 @@ img {
 }
 
 .background-blurred {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 1200px;
   height: 217px;
   background:
     url("../img/filter-background.jpg") no-repeat center;
+  background-color: #908484;
   letter-spacing: 0.2px;
 }
 
 .filter-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
   width: 1200px;
@@ -743,22 +752,21 @@ img {
 }
 
 .range-toggle {
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   position: absolute;
   top: -9px;
+  padding: 0;
   width: 4px;
   height: 4px;
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  border: 9px solid #ffffff;
 }
 
 .range-toggle-min {
@@ -852,7 +860,6 @@ img {
   right: 49%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   content: "";
   width: 2px;
@@ -901,11 +908,7 @@ img {
 .sorting-section {
   width: 1200px;
   height: 86px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -954,11 +957,17 @@ img {
   border: 0;
 }
 
+.sort-button.current {
+  color: rgba(129, 179, 210, 1);
+  border: 0;
+}
+
 .asc-desc-buttons {
   margin-top: 5px;
 }
 
 .desc-button, .asc-button {
+  display: inline-block;
   width: 11px;
   height: 10px;
   border: 0;
@@ -993,13 +1002,17 @@ img {
   background: url("../img/icon-down-active.svg") no-repeat;
 }
 
+.asc-button.current {
+  background: url("../img/icon-up-active.svg") no-repeat;
+}
+
+.desc-button.current {
+  background: url("../img/icon-down-active.svg") no-repeat;
+}
+
 .sorting-options {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -1029,8 +1042,6 @@ img {
 }
 
 .hotels-list li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #e5e5e5;
   padding: 29px 72px;
@@ -1067,11 +1078,7 @@ img {
 
 .item-specs {
   width: 182px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 17px;
 }
@@ -1083,15 +1090,8 @@ img {
 
 .rating-block {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
   align-items: flex-end;
 }
 
@@ -1143,13 +1143,9 @@ img {
 .main-footer {
   width: 1200px;
   height: 120px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
 }
 
 .main-footer-index {
@@ -1166,6 +1162,7 @@ img {
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  text-align: justify;
 }
 
 .contacts-index {
@@ -1185,8 +1182,6 @@ img {
 .social-icons-list {
   width: 400px;
   padding-left: 125px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -1251,17 +1246,20 @@ img {
 .copyright-block {
   position: relative;
   display: block;
-  width: 400px;
-  height: 41px;
-  padding-left: 185px;
+  margin-left: 36px;
+  width: 210px;
+  height: 32px;
   font-size: 14px;
   line-height: 26px;
 }
 
-.copyright-span {
+.copyright-block svg {
   position: absolute;
-  top: 7px;
-  right: 223px;
+  left: 149px;
+  bottom: -4px;
+}
+
+.copyright-span {
   color: #000000;
   padding: 0px;
   vertical-align: middle;

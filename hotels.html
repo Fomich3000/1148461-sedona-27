@@ -20,7 +20,7 @@
           <li class="nav-info"><a href="#">Информация</a></li>
           <li class="nav-gallery"><a href="#">Фото и видео</a></li>
           <li class="nav-map"><a href="#">Карта штата</a></li>
-          <li class="nav-housing"><a href="#">Гостиницы</a></li>
+          <li class="nav-housing"><a class="current" href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -69,15 +69,15 @@
             <div class="price-filter">
               <div class="white-heading price-filter-heading">Стоимость в сутки (р):</div>
               <div class="price-controls">
-                <label class="price-from">от <input type="number" name="price-from" value="0"></label>
-                <label class="price-to">До <input type="number" name="price-to" value="3000"></label>
+                <label class="price-from">от <input type="text" name="price-from" value="0"></label>
+                <label class="price-to">До <input type="text" name="price-to" value="3000"></label>
               </div>
               <div class="range-controls">
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="range-toggle range-toggle-min"></div>
-                <div class="range-toggle range-toggle-max"></div>
+                <button class="range-toggle range-toggle-min" aria-label="Ползунок уменьшения фильтра цены"></button>
+                <button class="range-toggle range-toggle-max" aria-label="Ползунок увеличения фильтра цены"></button>
               </div>
               <button class="white-border filter-show-button" type="submit">Показать</button>
             </div>
@@ -91,7 +91,7 @@
           <p>Сортировка:</p>
           <ul class="sorting-options">
             <li>
-              <a class="sort-button" href="#">По цене</a>
+              <a class="sort-button current" href="#">По цене</a>
             </li>
             <li>
               <a class="sort-button" href="#">По типу</a>
@@ -102,12 +102,12 @@
           </ul>
         </div>
         <div class="asc-desc-buttons">
-          <button class="asc-button" type="button">
+          <a class="asc-button" href="#">
             <span class="visually-hidden">Кнопка сортировки по возрастанию цены</span>
-          </button>
-          <button class="desc-button" type="button">
+          </a>
+          <a class="desc-button current" href="#">
             <span class="visually-hidden">Кнопка сортировки по убыванию цены</span>
-          </button>
+          </a>
         </div>
       </section>
 
