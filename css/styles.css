@@ -369,6 +369,7 @@ a.current {
   transform: translateX(50%);
   width: 568px;
   height: 86px;
+  padding: 29px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
