@@ -372,6 +372,7 @@ a.current {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  cursor: pointer;
 }
 
 .form-show {
@@ -912,6 +913,7 @@ a.current {
 
 .sorting-section {
   width: 1200px;
+  padding: 30px 0px;
   min-height: 86px;
   display: flex;
   align-items: center;

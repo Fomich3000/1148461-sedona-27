@@ -31,13 +31,16 @@ link.addEventListener("click", function(evt) {
       kids.value = storageKids;
     }
   } else if (form.classList.contains("form-error" && "form-show")) {
+    evt.preventDefault();
     form.classList.remove("form-error");
     form.classList.add("form-close-animated");
     form.classList.remove("form-show");
   } else if (form.classList.contains("form-close-animated")) {
+    evt.preventDefault();
     form.classList.remove("form-close-animated");
     form.classList.add("form-show");
   } else {
+    evt.preventDefault();
     form.classList.remove("form-show");
     form.classList.add("form-close-animated");
   }
