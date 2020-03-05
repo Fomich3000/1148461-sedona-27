@@ -206,7 +206,7 @@ a.current {
   width: 1200px;
   padding: 0;
   margin-top: 141px;
-  margin-bottom: 69px;
+  margin-bottom: 67px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -216,7 +216,7 @@ a.current {
 .features-item {
   width: 400px;
   position: relative;
-  padding: 0 57px;
+  padding: 0px 54px;
 }
 
 .features-item p {
@@ -554,7 +554,7 @@ a.current {
 }
 
 .form-item {
-  margin-bottom: 29px;
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
 }
@@ -617,7 +617,7 @@ a.current {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  margin-right: 37px;
+  margin-right: 36px;
   margin-bottom: 55px;
 }
 
@@ -925,6 +925,7 @@ a.current {
   width: 160px;
   margin-right: 6px;
   margin-left: 71px;
+  margin-bottom: 0;
 }
 
 .filter-show-button {
@@ -1195,6 +1196,7 @@ a.current {
   width: 400px;
   padding-left: 125px;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -1258,7 +1260,7 @@ a.current {
 .copyright-block {
   position: relative;
   display: block;
-  margin-left: 36px;
+  margin-left: 34px;
   width: 210px;
   height: 32px;
   font-size: 14px;
@@ -1267,7 +1269,7 @@ a.current {
 
 .copyright-block svg {
   position: absolute;
-  left: 149px;
+  left: 150px;
   bottom: -4px;
 }
 
