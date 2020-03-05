@@ -57,7 +57,6 @@ img {
   font-weight: 700;
   color: #333333;
   line-height: 26px;
-  min-height: 56px;
 }
 
 .main-header-logo {
@@ -152,6 +151,7 @@ a.current {
   font-size: 21px;
   font-weight: 700;
   color: #000000;
+  margin-bottom: 23px;
 }
 
 .slogan {
@@ -912,7 +912,7 @@ a.current {
 
 .sorting-section {
   width: 1200px;
-  height: 86px;
+  min-height: 86px;
   display: flex;
   align-items: center;
 }
@@ -922,8 +922,9 @@ a.current {
 }
 
 .result-heading {
-  margin-right: 49px;
-  margin-left: 72px;
+  width: 160px;
+  margin-right: 6px;
+  margin-left: 71px;
 }
 
 .filter-show-button {
@@ -1016,23 +1017,24 @@ a.current {
   background: url("../img/icon-down-active.svg") no-repeat;
 }
 
-
-
 .sorting-options,
 .sorting-options-wrapper {
-  width: 300px;
   margin: 0;
   display: flex;
   align-items: center;
   list-style: none;
   padding: 0;
-  margin-right: 235px;
-  margin-left: -2px;
+  margin-right: 62px;
 }
 
 .sorting-options-wrapper p {
   margin: 0;
-  margin-right: 43px;
+  margin-right: 39px;
+}
+
+.sorting-options {
+  width: 620px;
+  flex-wrap: wrap;
 }
 
 .sorting-options li {
