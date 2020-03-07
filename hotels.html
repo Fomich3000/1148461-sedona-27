@@ -17,10 +17,10 @@
           <img class="main-header-logo" src="img/logo-sedona.svg" width="140" height="72" alt="Логотип города Седона">
         </a>
         <ul class="site-navigation">
-          <li class="nav-info"><a href="#">Информация</a></li>
-          <li class="nav-gallery"><a href="#">Фото и видео</a></li>
-          <li class="nav-map"><a href="#">Карта штата</a></li>
-          <li class="nav-housing"><a class="current" href="#">Гостиницы</a></li>
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="gallery.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a class="current">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -76,8 +76,8 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <button class="range-toggle range-toggle-min" aria-label="Ползунок уменьшения фильтра цены"></button>
-                <button class="range-toggle range-toggle-max" aria-label="Ползунок увеличения фильтра цены"></button>
+                <button class="range-toggle range-toggle-min" type="button" aria-label="Ползунок уменьшения фильтра цены"></button>
+                <button class="range-toggle range-toggle-max" type="button" aria-label="Ползунок увеличения фильтра цены"></button>
               </div>
               <button class="white-border filter-show-button" type="submit">Показать</button>
             </div>
@@ -104,9 +104,13 @@
         <div class="asc-desc-buttons">
           <a class="asc-button" href="#">
             <span class="visually-hidden">Кнопка сортировки по возрастанию цены</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#ccc" d="M5.5 0L0 10h11z" /></svg>
           </a>
           <a class="desc-button current" href="#">
             <span class="visually-hidden">Кнопка сортировки по убыванию цены</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#ccc" d="M5.5 10L0 0h11" /></svg>
           </a>
         </div>
       </section>
@@ -127,6 +131,7 @@
             </div>
             <div class="rating-block">
               <div class="rating-stars-container">
+                <span class=visually-hidden>4 звезды рейтинга</span>
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
@@ -148,6 +153,7 @@
             </div>
             <div class="rating-block">
               <div class="rating-stars-container">
+                <span class=visually-hidden>3 звезды рейтинга</span>
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
@@ -168,6 +174,7 @@
             </div>
             <div class="rating-block">
               <div class="rating-stars-container">
+                <span class=visually-hidden>2 звезды рейтинга</span>
                 <span class="rating-star"></span>
                 <span class="rating-star"></span>
               </div>
@@ -178,7 +185,7 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="contacts">
+      <div class="contacts contacts-hotels">
         <p class="contacts-hashtag">#VISITSEDONA</p>
         <p class="contacts-phone">ТЕЛ: <a class="phone" href="tel:84956660266">+7(495) 666-02-66</a></p>
       </div>
@@ -199,7 +206,7 @@
           </a>
         </li>
       </ul>
-      <a class="copyright-block" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="copyright-block copyright-block-hotels" href="https://htmlacademy.ru/intensive/htmlcss">
         <span class="copyright-span">Website By</span>
         <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" width="115" height="41" viewBox="0 0 113 39">
           <path fill="#00000"
